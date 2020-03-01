@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: Peercoin
+Label: Peercoin
+Architecture: armhf
+Description: Peercoin Debian packages

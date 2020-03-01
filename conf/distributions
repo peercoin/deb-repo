@@ -1,0 +1,8 @@
+Origin: Peercoin
+Label: Peercoin
+Suite: stable
+Codename: buster
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Peercoin Debian packages
+SignWith: 8855FCBBB986787D

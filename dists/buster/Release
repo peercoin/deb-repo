@@ -1,0 +1,38 @@
+Origin: Peercoin
+Label: Peercoin
+Suite: stable
+Codename: buster
+Date: Sun, 01 Mar 2020 13:42:49 UTC
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Peercoin Debian packages
+MD5Sum:
+ 1e12852c64e23369c79a1c395945f985 5448 main/binary-amd64/Packages
+ b4bf62b20cca7da06187580bcd3bb521 1733 main/binary-amd64/Packages.gz
+ 777488fb8c611c3cbbb3ed93950e3a52 123 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-arm64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-arm64/Packages.gz
+ 6cc01727993e4cfc16ce1b2e007b1e0f 123 main/binary-arm64/Release
+ 1157f3fa4548ee5b55e7a9787aeb8763 5442 main/binary-armhf/Packages
+ 593fe678672384e7f6321ae717d256d8 1733 main/binary-armhf/Packages.gz
+ bb7255473f0ff752c711608cfd9aff0a 123 main/binary-armhf/Release
+SHA1:
+ e140633af3216e51273b894b80a5daa2849d57c7 5448 main/binary-amd64/Packages
+ d21b92c7f5e8d72c7c9e2a4cfcfc8adccf31ea80 1733 main/binary-amd64/Packages.gz
+ d2170932e4b25cccf1fd221f3c5bf35dc7e13eab 123 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-arm64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-arm64/Packages.gz
+ c34c93e48d4eff9c1fdf8557bea1277fd0138f13 123 main/binary-arm64/Release
+ 95f2404bc0c5e042cf698d48fdb2c3ffbc0fe7cf 5442 main/binary-armhf/Packages
+ c9adccb1af3408cfd3545607f8000039d8921510 1733 main/binary-armhf/Packages.gz
+ 7fd89d23e864d9269acf578fe14e930cb09466f6 123 main/binary-armhf/Release
+SHA256:
+ c62be78c9836ad536c5ef25c1758aee093369c0dfd4612e36d24754b8d78d099 5448 main/binary-amd64/Packages
+ edaf9c7744267aec49e7d1474b93e1e4966f024ac1b9d4904dd3d28dc48687c1 1733 main/binary-amd64/Packages.gz
+ a2d7029296d973c3e362086d0e0f1bbb986f2faf80899672101caa9680c053a1 123 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-arm64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-arm64/Packages.gz
+ d91eeb408c83f17faeb9510b8a7cf16624faa45beaef1d2a0e7ef51db1bb13cf 123 main/binary-arm64/Release
+ 4acde27ccbc786d5acfa0f08cf117d32e21199c9bae2473a9edc81a65b77f512 5442 main/binary-armhf/Packages
+ f003b920fde7672a1e26bd7b741cbe9089e2ff6208cc2196e6b964ced5f48602 1733 main/binary-armhf/Packages.gz
+ 0279f6d11c975314ec8e07252c3064e5b2b00ae1ada0b6ecd7bdd6283dfa25bf 123 main/binary-armhf/Release
