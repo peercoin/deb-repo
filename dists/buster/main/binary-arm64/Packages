@@ -20,24 +20,6 @@ Description: peer-to-peer network based digital currency - Qt GUI
  .
  This package provides Peercoin-Qt, a GUI client for Peercoin based on Qt.
 
-Package: peercoin-qt-dbgsym
-Source: peercoin
-Version: 0.8.5.1-1
-Auto-Built-Package: debug-symbols
-Architecture: arm64
-Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 66221
-Depends: peercoin-qt (= 0.8.5.1-1)
-Priority: optional
-Section: debug
-Filename: pool/main/p/peercoin/peercoin-qt-dbgsym_0.8.5.1-1_arm64.deb
-Size: 65229180
-SHA256: acf47ee814296782710a8d9c328c22a20e9e16d8262b1f471f508145965017c1
-SHA1: 89597fd6e921d288574dbecfce49f56033fe7222
-MD5sum: d0e1ba3fcc9dba7543a92ce1011dd347
-Description: debug symbols for peercoin-qt
-Build-Ids: 968811d5adb09ebf82346db6b72dde7077ed1e48
-
 Package: peercoin-tx
 Source: peercoin
 Version: 0.8.5.1-1
