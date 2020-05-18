@@ -1,18 +1,18 @@
 Package: peercoin-qt
 Source: peercoin
-Version: 0.8.5.1-1
+Version: 0.9.0-1
 Architecture: arm64
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 12222
+Installed-Size: 12318
 Depends: libboost-chrono1.67.0, libboost-filesystem1.67.0, libboost-program-options1.67.0, libboost-system1.67.0, libboost-thread1.67.0, libc6 (>= 2.27), libdb5.3++, libevent-2.1-6 (>= 2.1.8-stable), libevent-pthreads-2.1-6 (>= 2.1.8-stable), libgcc1 (>= 1:3.0), libminiupnpc17 (>= 1.9.20140610), libprotobuf17, libqrencode4 (>= 3.2.0), libqt5core5a (>= 5.8.0), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.3.0), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.11.0~rc1), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libzmq5 (>= 3.2.3+dfsg)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main/p/peercoin/peercoin-qt_0.8.5.1-1_arm64.deb
-Size: 4023200
-SHA256: bc1aece8782affd660b251054e4a5fcf2257bb52b65e9e668de292ca9c9aca04
-SHA1: d272e7635a90d1f920707ed0d54e2291d8d8debf
-MD5sum: e5688396ff15486249d414017c49e4b7
+Filename: pool/main/p/peercoin/peercoin-qt_0.9.0-1_arm64.deb
+Size: 4107040
+SHA256: e051bce409cf65b81a8c3608cb2c2ffb444d08ffa4746d9f132aaf28b794bfe2
+SHA1: 3f3e78b554f8cacc4c98f9ae3d1cb7856c33ddba
+MD5sum: 9b909613c910f2004e34f4470d55f92f
 Description: peer-to-peer network based digital currency - Qt GUI
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -22,7 +22,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
 
 Package: peercoin-tx
 Source: peercoin
-Version: 0.8.5.1-1
+Version: 0.9.0-1
 Architecture: arm64
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 961
@@ -30,11 +30,11 @@ Depends: libboost-chrono1.67.0, libboost-filesystem1.67.0, libboost-program-opti
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main/p/peercoin/peercoin-tx_0.8.5.1-1_arm64.deb
-Size: 367236
-SHA256: 2348f9815b606ef9e72013dface14bd97fd9092d8a06c76ebcf1a22ef93a8274
-SHA1: e30d21b04fb9cb4a0af88fbdf3f4e9437c232b8d
-MD5sum: 858210baf19b4926b9995c3876465720
+Filename: pool/main/p/peercoin/peercoin-tx_0.9.0-1_arm64.deb
+Size: 367432
+SHA256: ffbb9ea46ae3ee533e041d89b0d232e61af7b71febbcfa5946cdedbc956eb1c4
+SHA1: ace2bfa1a5b773467f602b7bde11adfe0ac01142
+MD5sum: d97f5e7acbab315d1cba3d0da0fcf028
 Description: peer-to-peer digital currency - standalone transaction tool
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -63,19 +63,19 @@ Build-Ids: 0c0fca14d675b239a21f9bcddf15c09636f032de
 
 Package: peercoind
 Source: peercoin
-Version: 0.8.5.1-1
+Version: 0.9.0-1
 Architecture: arm64
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 5933
+Installed-Size: 5941
 Depends: libboost-chrono1.67.0, libboost-filesystem1.67.0, libboost-program-options1.67.0, libboost-system1.67.0, libboost-thread1.67.0, libc6 (>= 2.27), libdb5.3++, libevent-2.1-6 (>= 2.1.8-stable), libevent-pthreads-2.1-6 (>= 2.1.8-stable), libgcc1 (>= 1:3.0), libminiupnpc17 (>= 1.9.20140610), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libzmq5 (>= 3.2.3+dfsg)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main/p/peercoin/peercoind_0.8.5.1-1_arm64.deb
-Size: 1576496
-SHA256: 2712db63d1f74f14556815f907d8f68782f9a497f732c59c88124913feea68ad
-SHA1: 4d0da9384e6ef1e5fe18a730a0523602f40986cd
-MD5sum: 188ed23ebb711e46e265575539320e9e
+Filename: pool/main/p/peercoin/peercoind_0.9.0-1_arm64.deb
+Size: 1577604
+SHA256: 36b21b4c7c997d5c439fdd9594605dcb0d59205883f1452a372d6836b9e14906
+SHA1: 80c5a71aeee33c5897b7ff5f3c4051457eec7875
+MD5sum: d18f7034f0fd8862f8c6ff8ca7e4eeea
 Description: peer-to-peer network based digital currency - daemon
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
