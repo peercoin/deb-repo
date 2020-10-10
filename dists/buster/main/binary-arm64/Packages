@@ -43,24 +43,6 @@ Description: peer-to-peer digital currency - standalone transaction tool
  tool which can be used without a peercoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.
 
-Package: peercoin-tx-dbgsym
-Source: peercoin
-Version: 0.8.5.1-1
-Auto-Built-Package: debug-symbols
-Architecture: arm64
-Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 6516
-Depends: peercoin-tx (= 0.8.5.1-1)
-Priority: optional
-Section: debug
-Filename: pool/main/p/peercoin/peercoin-tx-dbgsym_0.8.5.1-1_arm64.deb
-Size: 6398288
-SHA256: 91a1c8e3549e4d05d0052249470a4fd0510669877e0d84d1e23f36559c29be24
-SHA1: 994966abbbb9145ff6bd4c857812343d19a4e117
-MD5sum: 3a0bd98c18d843a31734e4cac24c9008
-Description: debug symbols for peercoin-tx
-Build-Ids: 0c0fca14d675b239a21f9bcddf15c09636f032de
-
 Package: peercoind
 Source: peercoin
 Version: 0.9.0-1
@@ -83,22 +65,4 @@ Description: peer-to-peer network based digital currency - daemon
  .
  This package provides the daemon, peercoind, and the CLI tool
  peercoin-cli to interact with the daemon.
-
-Package: peercoind-dbgsym
-Source: peercoin
-Version: 0.8.5.1-1
-Auto-Built-Package: debug-symbols
-Architecture: arm64
-Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 48320
-Depends: peercoind (= 0.8.5.1-1)
-Priority: optional
-Section: debug
-Filename: pool/main/p/peercoin/peercoind-dbgsym_0.8.5.1-1_arm64.deb
-Size: 47278148
-SHA256: ecb1ec54fc0a1626e14b6838fb337f4668d1c7b0bc418f32621ab118d179d2d8
-SHA1: ec51e28118932c0f70c3f74cbe0b0c30b2987588
-MD5sum: 22f0b78169b376c6e83e451e53b06452
-Description: debug symbols for peercoind
-Build-Ids: 362b9531e4d04063e26c231b9511fb696244b5cf e99a7d8a3785209e3307ae43c83bf2e26d51895d
 
