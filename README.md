@@ -22,3 +22,8 @@ sudo apt-get install peercoin-tx # to install tx utility
 peercoind
 peercoin-qt
 peercoin-tx
+
+
+## How to set up Debian repo
+
+https://blog.packagecloud.io/eng/2017/03/23/create-debian-repository-reprepro/
