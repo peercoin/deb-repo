@@ -5,4 +5,4 @@ Codename: buster
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Peercoin Debian packages
-SignWith: E674ADD57F759EC613D59AE877D42CC14924786B
+SignWith: B8276C0F851AAD7E
