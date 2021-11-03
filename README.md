@@ -17,6 +17,12 @@ sudo apt-get install peercoind # to install daemon
 sudo apt-get install peercoin-tx # to install tx utility
 ```
 
+If something goes wrong, try this:
+
+```
+apt-get --allow-releaseinfo-change update
+```
+
 ## Available Packages
 
 peercoind
