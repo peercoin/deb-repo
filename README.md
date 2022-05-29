@@ -29,6 +29,12 @@ peercoind
 peercoin-qt
 peercoin-tx
 
+## Migration to multi-distro
+
+This repository used to support only Debian 10, and it is multi-distro now.
+To migrate and keep recieving updates, execute this command again:
+
+> sudo sh -c "echo 'deb https://peercoin.github.io/deb-repo/ `lsb_release -c | cut -f2-` main-`lsb_release -c | cut -f2-`' > /etc/apt/sources.d/peercoin.list"
 
 ## How to set up Debian repo
 
