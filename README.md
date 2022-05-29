@@ -1,6 +1,6 @@
 # APT repository
 
-Peercoin APT repository for Debian Buster (10).
+Peercoin APT repository for Debian Buster (10) and Debian Bullseye (11).
 
 Supported architectures: amd64, arm64 and armhf.
 
@@ -8,7 +8,7 @@ Supported architectures: amd64, arm64 and armhf.
 sudo apt-get update
 sudo apt-get install apt-transport-https wget
 
-sudo sh -c "echo 'deb https://peercoin.github.io/deb-repo/ buster main' >> /etc/apt/sources.list.d/peercoin.list"
+sh -c "echo 'deb https://peercoin.github.io/deb-repo/ `lsb_release -c | cut -f2-` main-`lsb_release -c | cut -f2-`' > peercoin.list"
 wget -O - https://peercoin.github.io/deb-repo/peercoin.apt.key | sudo apt-key add -
 
 sudo apt-get update
