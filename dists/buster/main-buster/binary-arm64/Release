@@ -1,0 +1,6 @@
+Archive: oldstable
+Component: main-buster
+Origin: Peercoin
+Label: Peercoin
+Architecture: arm64
+Description: Peercoin Debian packages

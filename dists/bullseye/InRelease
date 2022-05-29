@@ -1,0 +1,55 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Peercoin
+Label: Peercoin
+Suite: stable
+Codename: bullseye
+Date: Sun, 29 May 2022 11:17:21 UTC
+Architectures: amd64 arm64 armhf
+Components: main-bullseye
+Description: Peercoin Debian packages
+MD5Sum:
+ 0baed0229e11633d5e3b6c4a2d99980a 3416 main-bullseye/binary-amd64/Packages
+ 63cf7e971bad6190e43b46740bfa52cb 1177 main-bullseye/binary-amd64/Packages.gz
+ c7784702252751bc503aaa5d06c06b28 132 main-bullseye/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main-bullseye/binary-arm64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main-bullseye/binary-arm64/Packages.gz
+ 859469f94a198236c4953952bbb7007b 132 main-bullseye/binary-arm64/Release
+ 382cbab36582eca901960e4714e5f30a 3480 main-bullseye/binary-armhf/Packages
+ 16f9d43292e995e6ee7a3887ccd20dc7 1193 main-bullseye/binary-armhf/Packages.gz
+ 4ed184059e71d51306dfd1807734f96e 132 main-bullseye/binary-armhf/Release
+SHA1:
+ 2d3c6a3c388693d22d3697b65034de805450a074 3416 main-bullseye/binary-amd64/Packages
+ 187453541226843000b13bce3f83f9d238e2fdfc 1177 main-bullseye/binary-amd64/Packages.gz
+ dfd1b43e4733a1aff784a3265d70d429691a694c 132 main-bullseye/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-bullseye/binary-arm64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-bullseye/binary-arm64/Packages.gz
+ f5ee2dffac5088949e2d5c5caa73770a89b3e13c 132 main-bullseye/binary-arm64/Release
+ 7d9c17fe776cceb4297cc9b3a765bc641b358021 3480 main-bullseye/binary-armhf/Packages
+ a68784c44c6e46ad2a459876aad5cdf791723399 1193 main-bullseye/binary-armhf/Packages.gz
+ 17f022e18ac27309e881ad5499512a44c8bacda1 132 main-bullseye/binary-armhf/Release
+SHA256:
+ 7060137ee29c0df151198f95d3409ce675e8a0aad6436ba82e994ba1ae6d319c 3416 main-bullseye/binary-amd64/Packages
+ 878983add293282643b21997a432da078c9779b6f37a80da6ba3ea02fb92fd73 1177 main-bullseye/binary-amd64/Packages.gz
+ aa97bdcc78139c56ea69f072aa5a6a7b606d1b2c26c5ec9630c72c26d76f0f58 132 main-bullseye/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-bullseye/binary-arm64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-bullseye/binary-arm64/Packages.gz
+ d5a46f1cff853218cc3e738d3bce2264061d3fa4f3977ed6853532deb5cf7ed1 132 main-bullseye/binary-arm64/Release
+ e92cb9539f81ab5c70ef15ef73f2bad8336f7876c2dad9baea8a7d18dc2fb504 3480 main-bullseye/binary-armhf/Packages
+ 6f002f1115b1cc6aa1c7ed5866f51a391256a2c25cdec02630a44cd35489326a 1193 main-bullseye/binary-armhf/Packages.gz
+ 804d71bc11e1ea0e718f24227074ec175146ea1bfc39925fb450d0f3898f40ca 132 main-bullseye/binary-armhf/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmKTVkEACgkQuCdsD4Ua
+rX40QQv/UhLz9Z/pMTUMTLSa9DUIFAoF/kKry+Rl9mr4BFiSRY9DCZv4jeyIHbcT
+PhYL6fl1g0dSL7rC2QNQFG0iY3Ss5FCPMBCThPWq45rNWYH6zKaXw3N4Ygw5V9O/
+UR1fRQeNdZN7799CGd4aPK5SXqzx5K9hU5871NgEvq4uhkAnevXrSTrZX0W9ILY3
+JaTPBGRsqDshby4H6Ampodfj/6M4mLnpud+5a+AP2D6IL75rNbEO8nU9QVEJCQ1z
+xqrAS9kZIW/w1Y5aj/+GviOLdyGniLiIP2DB8QdYfHQGNyNY1PNl9A3oUf8xg2vS
+lExUkNkpis1YqN4C+6zdqP7+Q80jx8FC0ceFgXSAaT1wbn0qhfdii2bf1UN1U2nQ
+nIHrbI/SEbAqUswWMJi41VfLZT1UJ6Nk/siEnZ+YPJ2MmdsKlcyKaZZiOImf6Thu
+/jNECeqVB91e7woFn5y2fqHiVYxeRUxmUPX2L4IaDJUGqf0WdEZaV3Xs5yZzTxAS
+3y1Rc2PF
+=UFJX
+-----END PGP SIGNATURE-----

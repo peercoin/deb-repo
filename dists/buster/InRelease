@@ -3,53 +3,53 @@ Hash: SHA512
 
 Origin: Peercoin
 Label: Peercoin
-Suite: stable
+Suite: oldstable
 Codename: buster
-Date: Fri, 27 May 2022 11:09:25 UTC
+Date: Sun, 29 May 2022 11:05:18 UTC
 Architectures: amd64 arm64 armhf
-Components: main
+Components: main-buster
 Description: Peercoin Debian packages
 MD5Sum:
- f0eee75289efdf7e8af5e53c02e6888e 3427 main/binary-amd64/Packages
- d7c38fe59d9fbf27b0b28a2e7dd3f171 1164 main/binary-amd64/Packages.gz
- 777488fb8c611c3cbbb3ed93950e3a52 123 main/binary-amd64/Release
- 6f27ecccef31606651f14ec1b1bd1f4d 3422 main/binary-arm64/Packages
- d8854e6a12b0468f9af900663a8c66c4 1166 main/binary-arm64/Packages.gz
- 6cc01727993e4cfc16ce1b2e007b1e0f 123 main/binary-arm64/Release
- 239f3196fb7379513a75374049ae03d5 3485 main/binary-armhf/Packages
- f1cd941591a768bf6453c63a25d91992 1175 main/binary-armhf/Packages.gz
- bb7255473f0ff752c711608cfd9aff0a 123 main/binary-armhf/Release
+ 875dcf0147a354278a58c2284deeeb2e 3448 main-buster/binary-amd64/Packages
+ fad43843a340da1cadc2c36d9aae84e5 1164 main-buster/binary-amd64/Packages.gz
+ 594218761d3e9dc253b82bb6b3404ff3 133 main-buster/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main-buster/binary-arm64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main-buster/binary-arm64/Packages.gz
+ ad64470df7c43935c4def2df369c0acc 133 main-buster/binary-arm64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main-buster/binary-armhf/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main-buster/binary-armhf/Packages.gz
+ a1d42f2a87adb6853585846ed861b7c8 133 main-buster/binary-armhf/Release
 SHA1:
- eb674c663b887c10ac3aba02ccd00d1da669f829 3427 main/binary-amd64/Packages
- 7519eb4619deadf094f7436011112daabb5fff73 1164 main/binary-amd64/Packages.gz
- d2170932e4b25cccf1fd221f3c5bf35dc7e13eab 123 main/binary-amd64/Release
- 2b669227375dee9994967424bcc67f659190b8f8 3422 main/binary-arm64/Packages
- 6fc549ec15eece801b48d1ae347ceba5d5b08331 1166 main/binary-arm64/Packages.gz
- c34c93e48d4eff9c1fdf8557bea1277fd0138f13 123 main/binary-arm64/Release
- e93fcd4ded0799c6c3298779d05585109b6bbd93 3485 main/binary-armhf/Packages
- 0eae4b00a771b0cddc23146872fab95c71c3f449 1175 main/binary-armhf/Packages.gz
- 7fd89d23e864d9269acf578fe14e930cb09466f6 123 main/binary-armhf/Release
+ 7c47e7515f1715ffc82720fd83a9563dd8b71427 3448 main-buster/binary-amd64/Packages
+ 331d906092b763b793a7ef41727281b4abb5ecca 1164 main-buster/binary-amd64/Packages.gz
+ 223620e612c296bc5ebee0408f34474f11c2c934 133 main-buster/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-buster/binary-arm64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-buster/binary-arm64/Packages.gz
+ 33e1284d870d473d8da0d28098d98ef8eda5e410 133 main-buster/binary-arm64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-buster/binary-armhf/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-buster/binary-armhf/Packages.gz
+ e21554b11d8e14522cf011941fcad1786e5c0a93 133 main-buster/binary-armhf/Release
 SHA256:
- 8569ff9aa9b04ea3ed7ce338d3d5e07b3ffeae41d0d2b1118e9a9b32a7a5904e 3427 main/binary-amd64/Packages
- 95cc666b5500daded4c9b4027e3cc8208152089c4708b33d291afbe124d03d6d 1164 main/binary-amd64/Packages.gz
- a2d7029296d973c3e362086d0e0f1bbb986f2faf80899672101caa9680c053a1 123 main/binary-amd64/Release
- b693b5184e4ad9fbea6ac410f6920f32ba9d0543e4dd05d962186924260667f6 3422 main/binary-arm64/Packages
- ec6b1551dcba8acb9dca81dc2b8fd97c116c2bdd2f32ee06ee88b58df8c20c09 1166 main/binary-arm64/Packages.gz
- d91eeb408c83f17faeb9510b8a7cf16624faa45beaef1d2a0e7ef51db1bb13cf 123 main/binary-arm64/Release
- ef6a75c761876dbf23324e0c454f52d1b35157076e971d1d615b8fc636ae1adb 3485 main/binary-armhf/Packages
- aee55f52a946aa5daf832e371824b8a65da83a458f3aabe9d88fc427fb4b5fff 1175 main/binary-armhf/Packages.gz
- 0279f6d11c975314ec8e07252c3064e5b2b00ae1ada0b6ecd7bdd6283dfa25bf 123 main/binary-armhf/Release
+ 48b67d3c76eca48eee1ef5669ded378d429d8e326152461b6e8dd2156dedb55c 3448 main-buster/binary-amd64/Packages
+ 3a7e8a348697504267874e8859a75333b066bc61b835353d97df36e6c65a11ca 1164 main-buster/binary-amd64/Packages.gz
+ 1b74c49a696734aaecaac5e8fff53d852489fef3b6ab335398b32acc15abd19a 133 main-buster/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-buster/binary-arm64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-buster/binary-arm64/Packages.gz
+ 804962a67b220223a36d3dc0f239511cbe65194e923b27913e06cec8c2a965f3 133 main-buster/binary-arm64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-buster/binary-armhf/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-buster/binary-armhf/Packages.gz
+ ba95c277e7f6ec586107da95c281f9f731705776aee73b5ed2930ee88881c5b1 133 main-buster/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmKQsWUACgkQuCdsD4Ua
-rX6i0wv+IK596lwGma/yZYsQlaYHDVeHxPT2LdC4tCiIvMUTXq+taIlsyhsFNeu5
-0KdbglNZttKqls+wA94YqC5G4E6RwEfDUc72J/ubU293dKbUVZrG9ped4cwuam3P
-2E5X6c27jHHuLVQHqt40pgUnr96aWC+dGXvqbsRFKmL7BjYDE5AWNnmzQkb9gNaR
-YZT+zgHfLk3OOix3it5YgEjjEUbQ54zfsdddSS2H5wDD8PmiDjTPQBJXqTmtPsZ4
-i3fh8IdBjyPqySgV/+afc/k8+JiTAqRI/+33ec/yJDMBfP2B/BkOVqSV0Gp0JRMe
-sg9z4fnz8ezY8SMGcEuz3MF3WkLRYzZpT0oRReTCCB7TRVFCuBKAyxrUJ/hHPX3j
-8z+jO63YriWsd04tfkZQajml1kbyNmpC/6Z+nkfzh96PVhhvdASBT6PbHz2IFIlq
-atxj9JstGAiCFwUfhTtn9HiuzKFKJlV5HD5N/aTf8Fd+B7g1L7EKT5g/TmfN2tFo
-l2bQqkMt
-=PrLT
+iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmKTU28ACgkQuCdsD4Ua
+rX6GAQv+JNGLFks+qLYnjryOecsj7STmnx92UQW7wRik+w5H5DjC221ZwNRMqx0C
+6TbzDaL+/zWAnD3FRtfWWs/N/XdR2Fs7bzExXA086d/q63yI6DE7iiHLVI5Y5HLy
+Nqcr1QR4a0H4+tcJqIn1G8CIPcCCuFhV3ZmtfrDMvGin5b2mJ+p6BCxyZXEZ66RW
+/Z9kf+M5nsutW7Ct02EeuOpC/unmQidRR2VUc+GK/ue6JnwFwZQZIzDHwrX5pjbi
+LW/Ns6PRdriGIlz65xUm3BgS7LlmfssknsTtx5PTx8JPOofwpeLlPatDWh5SqHX9
+Bf4uLlg8vb9ENdLJkV1Kmd3UEHisHRrO9b/AnginolI/oT6xr6beyPOA7GRuJ7sq
+59+zwMo8ixtzfbYObbl2bdbtBZ2dSsWgQAtlnhAChnm47AAdaz96UkWPBpgW2HRN
+YR8sVQzNO4j6o/Qo3Njz1kCu5oAXF1rOQ7TUQJ9wIO/C4MuzhI00l3oh4kg33JGM
+gebrcFLD
+=WWvx
 -----END PGP SIGNATURE-----
