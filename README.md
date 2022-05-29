@@ -8,7 +8,7 @@ Supported architectures: amd64, arm64 and armhf.
 sudo apt-get update
 sudo apt-get install apt-transport-https wget
 
-sudo sh -c "echo 'deb https://peercoin.github.io/deb-repo/ `lsb_release -c | cut -f2-` main-`lsb_release -c | cut -f2-`' > /etc/apt/sources.d/peercoin.list"
+sudo sh -c "echo 'deb https://peercoin.github.io/deb-repo/ `lsb_release -c | cut -f2-` main-`lsb_release -c | cut -f2-`' > /etc/apt/sources.list.d/peercoin.list"
 wget -O - https://peercoin.github.io/deb-repo/peercoin.apt.key | sudo apt-key add -
 
 sudo apt-get update
