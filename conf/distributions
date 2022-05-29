@@ -1,8 +1,17 @@
 Origin: Peercoin
 Label: Peercoin
-Suite: stable
+Suite: oldstable
 Codename: buster
 Architectures: amd64 arm64 armhf
-Components: main
+Components: main-buster
+Description: Peercoin Debian packages
+SignWith: B8276C0F851AAD7E
+
+Origin: Peercoin
+Label: Peercoin
+Suite: stable
+Codename: bullseye
+Architectures: amd64 arm64 armhf
+Components: main-bullseye
 Description: Peercoin Debian packages
 SignWith: B8276C0F851AAD7E
