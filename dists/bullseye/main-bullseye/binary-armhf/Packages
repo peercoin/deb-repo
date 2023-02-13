@@ -1,18 +1,18 @@
 Package: peercoin-qt
 Source: peercoin
-Version: 0.11.7-1
+Version: 0.12.1-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 11860
-Depends: libatomic1 (>= 4.8), libboost-filesystem1.74.0 (>= 1.74.0), libboost-thread1.74.0 (>= 1.74.0), libc6 (>= 2.30), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.5), libminiupnpc17 (>= 1.9.20140610), libqrencode4 (>= 3.2.0), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.14.1), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libzmq5 (>= 4.0.1+dfsg)
+Installed-Size: 12217
+Depends: libc6 (>= 2.30), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.5), libminiupnpc17 (>= 1.9.20140610), libqrencode4 (>= 3.2.0), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.15.1), libsqlite3-0 (>= 3.7.15), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9.1), libzmq5 (>= 4.0.1+dfsg)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bullseye/p/peercoin/peercoin-qt_0.11.7-1_armhf.deb
-Size: 4267704
-SHA256: 32223d0b1e02c9ee3fdc04272752f3c46f66ca189b64e50f6943d29585b8a4ee
-SHA1: 52b704baad16c546418735611a98b711a1242780
-MD5sum: bcfaa385cd43bac339e80d408160b715
+Filename: pool/main-bullseye/p/peercoin/peercoin-qt_0.12.1-1_armhf.deb
+Size: 5934756
+SHA256: a7b26205268840451b2a8a131f74899f9956bfd4484013d9e3788e2a0f678ea8
+SHA1: 21aab4891477c04101683a744055a4dee87f4636
+MD5sum: 39586c7e89a01dc78a29944c55da765d
 Description: peer-to-peer network based digital currency - Qt GUI
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -22,19 +22,19 @@ Description: peer-to-peer network based digital currency - Qt GUI
 
 Package: peercoin-tx
 Source: peercoin
-Version: 0.11.7-1
+Version: 0.12.1-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 976
-Depends: libatomic1 (>= 4.8), libboost-filesystem1.74.0 (>= 1.74.0), libc6 (>= 2.28), libgcc-s1 (>= 3.5), libstdc++6 (>= 5.2)
+Installed-Size: 7592
+Depends: libc6 (>= 2.30), libdb5.3++, libgcc-s1 (>= 3.5), libsqlite3-0 (>= 3.7.15), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9.1)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bullseye/p/peercoin/peercoin-tx_0.11.7-1_armhf.deb
-Size: 382192
-SHA256: 1fa8c745b256f30fa5b202db8289895d8c02cde0edd51e3755cf9e118334be91
-SHA1: f4a80ee3f5e9e186e7517f644536310834e85ae8
-MD5sum: 44eec80c8bee8cff20099f19bff3629e
+Filename: pool/main-bullseye/p/peercoin/peercoin-tx_0.12.1-1_armhf.deb
+Size: 2997696
+SHA256: 131cd1408bb07a7bcbcddfff01f3cbfec57bc3837bbfcc94e3e8c5ce29cf3aca
+SHA1: 6bbb6425154f8a887b24f6ed03b769bc23aeae08
+MD5sum: 01da120cf7d4e78647fd77529e392c97
 Description: Peer-to-peer digital currency - standalone transaction tool
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -45,19 +45,19 @@ Description: Peer-to-peer digital currency - standalone transaction tool
 
 Package: peercoind
 Source: peercoin
-Version: 0.11.7-1
+Version: 0.12.1-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 6285
-Depends: libatomic1 (>= 4.8), libboost-filesystem1.74.0 (>= 1.74.0), libboost-thread1.74.0 (>= 1.74.0), libc6 (>= 2.30), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.5), libminiupnpc17 (>= 1.9.20140610), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libzmq5 (>= 4.0.1+dfsg)
+Installed-Size: 6866
+Depends: libc6 (>= 2.30), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.5), libminiupnpc17 (>= 1.9.20140610), libsqlite3-0 (>= 3.7.15), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9.1), libzmq5 (>= 4.0.1+dfsg)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bullseye/p/peercoin/peercoind_0.11.7-1_armhf.deb
-Size: 1903236
-SHA256: 4d9d2942fc83555e4aa94318b1920a63dc3ae7fc86a2b8e92fcecf255013ee0e
-SHA1: df5544b2864c4376ec016884d18a4f0a160c14de
-MD5sum: 2247ec1d64cbddca595acf6bce441d86
+Filename: pool/main-bullseye/p/peercoin/peercoind_0.12.1-1_armhf.deb
+Size: 3490732
+SHA256: 5913d558538037888faba8232383c93b39d3c01f3c98b42cd47be00c672001ab
+SHA1: ec742dee1cdb1cbb55df2f068437e99a7d11cdd5
+MD5sum: edb0b1892344cb897f827fdbfd5dd995
 Description: peer-to-peer network based digital currency - daemon
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
