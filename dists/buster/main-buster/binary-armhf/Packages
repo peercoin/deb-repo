@@ -1,6 +1,6 @@
 Package: peercoin-qt
 Source: peercoin
-Version: 0.12.1-2
+Version: 0.12.2-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 14541
@@ -8,11 +8,11 @@ Depends: libatomic1 (>= 4.8), libc6 (>= 2.28), libdb5.3++, libevent-2.1-6 (>= 2.
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-buster/p/peercoin/peercoin-qt_0.12.1-2_armhf.deb
-Size: 5883308
-SHA256: ec3379a64a31050be9aac0a0f6c1dfc101108054a6b83b336502c7eddd643e10
-SHA1: 0a232ec9ec75e10e91b7d531313175ac96b566b6
-MD5sum: 0ffaa56e101d2e5726051ac252e8b4b6
+Filename: pool/main-buster/p/peercoin/peercoin-qt_0.12.2-1_armhf.deb
+Size: 5877892
+SHA256: 3340b4bfb53cdf0027328a85c5885eb6a8a341f1699247fe5d83ad964daf162d
+SHA1: adee459ce30d79335b5a0e97bd7ed7199bd98de6
+MD5sum: c7843c51dab7c06ab1ee8dd9d62ecc52
 Description: peer-to-peer network based digital currency - Qt GUI
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -22,19 +22,19 @@ Description: peer-to-peer network based digital currency - Qt GUI
 
 Package: peercoin-tx
 Source: peercoin
-Version: 0.12.1-2
+Version: 0.12.2-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 9796
+Installed-Size: 9800
 Depends: libatomic1 (>= 4.8), libc6 (>= 2.28), libdb5.3++, libgcc1 (>= 1:3.5), libsqlite3-0 (>= 3.7.15), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-buster/p/peercoin/peercoin-tx_0.12.1-2_armhf.deb
-Size: 2965684
-SHA256: b0482175a992a6fdc0ab0d108360bb658f4799dba6492c6b712075c595d27c5c
-SHA1: 6bef18b8c1ef73d3f93d974f7c8b4486f32defa2
-MD5sum: 23414a1263a19a9c27c8da3b5d99d212
+Filename: pool/main-buster/p/peercoin/peercoin-tx_0.12.2-1_armhf.deb
+Size: 2965936
+SHA256: af28a4cf36c926e2d1225800e1b54030551b7c5050e6722178291aa05ae18a25
+SHA1: 12a4034ba51179ea467d152a3831fd6379a13bc1
+MD5sum: acffd062803bb3025e7a23c66e7476e1
 Description: Peer-to-peer digital currency - standalone transaction tool
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -45,19 +45,19 @@ Description: Peer-to-peer digital currency - standalone transaction tool
 
 Package: peercoind
 Source: peercoin
-Version: 0.12.1-2
+Version: 0.12.2-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 9110
+Installed-Size: 9099
 Depends: libatomic1 (>= 4.8), libc6 (>= 2.28), libdb5.3++, libevent-2.1-6 (>= 2.1.8-stable), libevent-pthreads-2.1-6 (>= 2.1.8-stable), libgcc1 (>= 1:3.5), libminiupnpc17 (>= 1.9.20140610), libsqlite3-0 (>= 3.7.15), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libzmq5 (>= 4.0.1+dfsg)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-buster/p/peercoin/peercoind_0.12.1-2_armhf.deb
-Size: 3463216
-SHA256: b481ced91dd6b0839e124aaeae67eadb8091618cdd1a2dd8476ba885f37e6c8e
-SHA1: f857453327204eb585f76b07fbbb0257310757fe
-MD5sum: 8cf9e19ebd5c0d79f7821efafc397e3b
+Filename: pool/main-buster/p/peercoin/peercoind_0.12.2-1_armhf.deb
+Size: 3460588
+SHA256: 7571750c7f537715dccb6ce02ff20c89827a16d37415654907558531e25812c8
+SHA1: 1ccb60ec54731f52ed83ea953df1a839253801f3
+MD5sum: 465fcb819dd372776738bcbc23107eb8
 Description: peer-to-peer network based digital currency - daemon
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
