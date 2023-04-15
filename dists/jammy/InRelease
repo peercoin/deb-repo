@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Peercoin
+Label: Peercoin
+Suite: stable
+Codename: jammy
+Date: Sat, 15 Apr 2023 10:59:50 UTC
+Architectures: riscv64
+Components: main-jammy
+Description: Peercoin Ubuntu packages
+MD5Sum:
+ b2cb0dfc6b5fdf43f2630ed2ed9786b7 3429 main-jammy/binary-riscv64/Packages
+ 0d58da9534770be8a58f5bde8dacada4 1181 main-jammy/binary-riscv64/Packages.gz
+ 076078706b43792c48d3b2bb15b032e5 131 main-jammy/binary-riscv64/Release
+SHA1:
+ a5e00d153286f654d9785de98e92488025fca94b 3429 main-jammy/binary-riscv64/Packages
+ f49d49bc89a30a54b46818d330d04d696d97ae1b 1181 main-jammy/binary-riscv64/Packages.gz
+ 8cb9fb511f4a3712df0e7f666e4340fbc38eb9dc 131 main-jammy/binary-riscv64/Release
+SHA256:
+ 9aebcf7cfff1930211c16397a85c72103081b7ed92e26c295aa02930428b478c 3429 main-jammy/binary-riscv64/Packages
+ e878e829c48917ecd00b1ee935b9be56396d56ab5039981e1225ebac5f156600 1181 main-jammy/binary-riscv64/Packages.gz
+ 90967c9707f98d0160f9c0d6ac15c7eb44368759827836fc2e09ce2c806c4d8a 131 main-jammy/binary-riscv64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmQ6g6YACgkQuCdsD4Ua
+rX5k0gwAo4BdBShzp8xe87GrRs0XM47GU46PBqfSxbqwNNnq2uqx3yv6SQlvfvuI
+ekMDDlAfyqc7P17gEncrDV7A9Q6+V3IcRdBoqBaYHhcdAKTZyJI0+G4rZq0ck9v1
+fpdTU0ATuudZToj+neNLK6iKsM7Pvd0Vrr05yFwCIu0PXmymMKJqDhpXEmjuA9Ku
+QcrAqbWSpl7ocJYI64C8YAKaGNTDU8FIRhp5ENaigWRJhvNEODOpUlWEY///THkc
+T7PBhcggADizGafpgPBeVKpe8xzKWmONM4ve+y1eoPN9h3kyqjraMz8Ds/DFyVZp
+4lVUPmCxoIctAgYbutGnzBn1P8LehlvBtFN6GpQH0qjWE/wTUBqus3aYQAh6XTzN
+z/A0XLrH0Ih9Ledz+BVUCRG69iGeHoPx1Q+l4XNxucwW/ERCjqNyQ8JGTWizvZTV
+04mm+v0zDmsP9dcVXJ/hN5m1TA0G5Kp2fjjP4mqKBSeeqopFFcU8kZgRQtu2B+AU
+kR4zttRG
+=qiWP
+-----END PGP SIGNATURE-----

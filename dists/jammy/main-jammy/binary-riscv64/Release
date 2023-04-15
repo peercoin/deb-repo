@@ -1,0 +1,6 @@
+Archive: stable
+Component: main-jammy
+Origin: Peercoin
+Label: Peercoin
+Architecture: riscv64
+Description: Peercoin Ubuntu packages
