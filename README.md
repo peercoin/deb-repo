@@ -1,8 +1,8 @@
 # APT repository
 
-Peercoin APT repository for Debian Buster (10) and Debian Bullseye (11).
+Peercoin APT repository for Ubuntu Jammy (22.04), Debian Buster (10) and Debian Bullseye (11).
 
-Supported architectures: amd64, arm64 and armhf.
+Supported architectures: amd64, arm64, armhf and riscv64 (only Ubuntu).
 
 ```
 sudo apt-get update
