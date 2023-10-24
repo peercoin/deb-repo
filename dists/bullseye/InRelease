@@ -1,17 +1,17 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+Hash: SHA512
 
 Origin: Peercoin
 Label: Peercoin
 Suite: stable
 Codename: bullseye
-Date: Thu, 07 Sep 2023 11:38:15 UTC
+Date: Tue, 24 Oct 2023 13:29:37 UTC
 Architectures: amd64 arm64 armhf
 Components: main-bullseye
 Description: Peercoin Debian packages
 MD5Sum:
- 32f8b8b970a9a5d76acf767e642cd646 3350 main-bullseye/binary-amd64/Packages
- 69cbd47b8b6f2c097578945e271e3db2 1166 main-bullseye/binary-amd64/Packages.gz
+ fb9747ca2037abf94209d30ca27e8291 3350 main-bullseye/binary-amd64/Packages
+ 25f0603a16336725ab974c2cd04a661c 1162 main-bullseye/binary-amd64/Packages.gz
  c7784702252751bc503aaa5d06c06b28 132 main-bullseye/binary-amd64/Release
  6224245650825046b87fef6128aff35b 3348 main-bullseye/binary-arm64/Packages
  5ed03376f2b96ed392f30a484744ea66 1169 main-bullseye/binary-arm64/Packages.gz
@@ -20,8 +20,8 @@ MD5Sum:
  b7e4543a165401be0c6e9e8e5780b7ad 1165 main-bullseye/binary-armhf/Packages.gz
  4ed184059e71d51306dfd1807734f96e 132 main-bullseye/binary-armhf/Release
 SHA1:
- b677ec26063aa0e86c27597db1e188bc449d2b6f 3350 main-bullseye/binary-amd64/Packages
- 42a0bbd66b01a7a1340795f8fa453160e58504f0 1166 main-bullseye/binary-amd64/Packages.gz
+ 2cc4ccdaa35963e05e67d80f9291be3c66f59065 3350 main-bullseye/binary-amd64/Packages
+ 3e20001f6f00887143bb0f49363f7531596e3a0d 1162 main-bullseye/binary-amd64/Packages.gz
  dfd1b43e4733a1aff784a3265d70d429691a694c 132 main-bullseye/binary-amd64/Release
  0b77babf6066c3eb3a8471126824da6615ac75cb 3348 main-bullseye/binary-arm64/Packages
  624619c42283b4a64f97f374912d9108f6d4c78b 1169 main-bullseye/binary-arm64/Packages.gz
@@ -30,8 +30,8 @@ SHA1:
  a074919515c315caa52e6ccac50ed87e2d2bbc07 1165 main-bullseye/binary-armhf/Packages.gz
  17f022e18ac27309e881ad5499512a44c8bacda1 132 main-bullseye/binary-armhf/Release
 SHA256:
- 657b99363f7e5270f17f59285b1201c93b7ea0e98b58f7e45d1e9f3e6bcb380f 3350 main-bullseye/binary-amd64/Packages
- f4bfc67bc2d26d555fc2c6a25c84e45fe1a867907916e5f4d14505ad8ee8f91b 1166 main-bullseye/binary-amd64/Packages.gz
+ f5cd97ac95b748dfeecf42dc1c10d78060f4101954d5938c43743cf538b2d221 3350 main-bullseye/binary-amd64/Packages
+ ec16e090fd40739a1872a9ffb0744cc306c99bfc358a32d22b84c038be1fb635 1162 main-bullseye/binary-amd64/Packages.gz
  aa97bdcc78139c56ea69f072aa5a6a7b606d1b2c26c5ec9630c72c26d76f0f58 132 main-bullseye/binary-amd64/Release
  fd105a21e71d345897249e04fe23358ed5978033fe5d81d510711ba1dcf7dedc 3348 main-bullseye/binary-arm64/Packages
  053ed70d5ad40c3d0874490bda0b96863e8da9ef52f444f1a5d638d16041746b 1169 main-bullseye/binary-arm64/Packages.gz
@@ -41,15 +41,15 @@ SHA256:
  804d71bc11e1ea0e718f24227074ec175146ea1bfc39925fb450d0f3898f40ca 132 main-bullseye/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCAAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmT5ticACgkQuCdsD4Ua
-rX7gfgv9F8nQTf8wEpBEue/SczNhbFJK3Glbu5aH4qPdiVnFbxYsTQ6GiBI1OsKo
-Yuz0+BDM+e2Y5ez88LGTQSToW8VhWMJX+Qf1Ff7EDViqSumlPbCGhpkWu6Kgve2W
-ChH9d2lBM0wzuZgxchEBoegozRIOVXGFzdq4nAuDOlJ8eGwGtVdIVo4J59MZRNpw
-wHRoUPGXbeG23s3jXQVYmdfZ/jkwRMX72JC/10r8SdenQrAtmNR10ph/vrK1riyA
-+3fCYGlvCIK0YRBdSug+tqWRLDywFzj847uUsJsqLjeHbGbghR4bOnbr4rzx1Ewb
-GUpjHd3WuHzk/9yw1ctreJGurDw41BYBf6JA4A5NHNmbYopqTnR+gfIWUMCFxLaC
-q0Ln0mvLI+8cejU4aMW3IUP0/AzH9EdwoA3FwDvchMq7uH817pvbK26EUZFUirdJ
-RXDefAqFT7AdEq6KOspFdmO/253d6WjmoinawqyKIGsL6FKrPEVnQwEKdgA1Bisu
-L35x2SEc
-=LEH0
+iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmU3xsIACgkQuCdsD4Ua
+rX6Isgv/SdsPRdrcy06l4ASmB6EXgc5s8b+fG1JEHosmVde1sUX4qn84QF9IFj8l
+Ma+4yxcYVIBRhQdoOghNbS15L1gg8vs5X64rlG29oTCvcSoS1L9yviwLanSqr/T1
+Prsn40WFsnUAkLCOVTQew9Tb+4Ouh/dtQZfMsMX1xl5F9SHcdlxTJMjeolb6bvKR
+Xe97kbTufUshEZDWR+FfVLQCUmNN6RJnLvs90qgN9MVmtV0UeiH82d4ENNFwWqLX
+KD3kenz4oRpVmM0dsV5J73zyNWkvuxKDwWJDz6S33bszF/XWP/kyzE23h1buv4qY
+DseCU1XC1osWJgiqmr3kY7qIK1NnHKQcFmMuciJGfiKrwJkWeF84goiuoWJQefRb
+atvLuU1HXRIg8QfdHhEN77tf5/+QCPHiNnGKg3tYyQA/wOKBHkSWb+0GXk3C8Bp9
+JENcEF8IEAy4VtyjEbf2Be4BlEYonlmBfNFY3NT0iIDH07quZzyZorpLYTa0tg2p
+ZJMl9UIv
+=8GY9
 -----END PGP SIGNATURE-----
