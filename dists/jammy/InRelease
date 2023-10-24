@@ -5,33 +5,42 @@ Origin: Peercoin
 Label: Peercoin
 Suite: stable
 Codename: jammy
-Date: Tue, 24 Oct 2023 18:26:15 UTC
-Architectures: riscv64
+Date: Tue, 24 Oct 2023 19:08:29 UTC
+Architectures: riscv64 arm64
 Components: main-jammy
 Description: Peercoin Ubuntu packages
 MD5Sum:
  aea170dfcfb33a7a837913c2086572a9 3429 main-jammy/binary-riscv64/Packages
  98600b9b4dd84b7b52c57f8479e5a902 1183 main-jammy/binary-riscv64/Packages.gz
  076078706b43792c48d3b2bb15b032e5 131 main-jammy/binary-riscv64/Release
+ a917f9e7790bdb01dddaea6d4a1981b5 3332 main-jammy/binary-arm64/Packages
+ e71c9e2df85b511676d9e26518e0e3ea 1178 main-jammy/binary-arm64/Packages.gz
+ ee7cb863b6a68f925b3d7a5b0f795ddc 129 main-jammy/binary-arm64/Release
 SHA1:
  8e337adc2aa0ec0e749ec00c749ff96ee5fa6cee 3429 main-jammy/binary-riscv64/Packages
  81edd901c24ee40b258b0b878a5c2a877ff65205 1183 main-jammy/binary-riscv64/Packages.gz
  8cb9fb511f4a3712df0e7f666e4340fbc38eb9dc 131 main-jammy/binary-riscv64/Release
+ 4aa9efd08e3c55b7bd8c26064c59230aee12fcdc 3332 main-jammy/binary-arm64/Packages
+ 6e11e27f401ffea4f9087b77436c28b7deccae99 1178 main-jammy/binary-arm64/Packages.gz
+ 87585f3360940de7a2cabfecbb89ca85674c37aa 129 main-jammy/binary-arm64/Release
 SHA256:
  2213374be1baa5f131db33ced33dda58913f32428366dc5ef64a6868f5a5100f 3429 main-jammy/binary-riscv64/Packages
  01024f28029dcdc3fec6de76ea1157a5ddc8aef566669a86515d2d3153c461de 1183 main-jammy/binary-riscv64/Packages.gz
  90967c9707f98d0160f9c0d6ac15c7eb44368759827836fc2e09ce2c806c4d8a 131 main-jammy/binary-riscv64/Release
+ e108dd9aceb01ac5fd1ead44859132c236c2109d9d6524727c31a7ddc1659d28 3332 main-jammy/binary-arm64/Packages
+ 10ff1b2745403ceda4971db4a90668616b7a26d13c320a4fd635b089bfc361a1 1178 main-jammy/binary-arm64/Packages.gz
+ 8e94d2921963538ce237e281831de39ccdf5d88076b95f7ca571fe573e158843 129 main-jammy/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmU4DEcACgkQuCdsD4Ua
-rX5Pgwv/a/fQ+ovSXZ2LWaq5JgNo88GxqLGmt10UefhVry496sPY4Y93po2vD6c6
-/BGC1g5AEEyj1c8UWYnBO03z3ygg1xSlbhBRdOHxY1ZnVwjT34oMG/Z1yGQfb4qE
-GK5lnAwHoXqObe4s6Oczq5JE0/SGHc82zxqxdJNwwR4Yi1mJelPzC++RoOkzeTZJ
-tkfHmZr8YjLKpoUMMuuFEzcoloo7Ar/KRxNHElNE3HDnQu66nyrsYSytj67p9n0q
-JIHd027P4paK6yqWMmJeuRUW7sAuA79PGUC3OA9y2ZFqqDaWU443F/4Q7WcQJHsT
-kUjVQXjGShI62gyjXN+aJLFmgnot8bUD5e7q4l4wLQbBNkDXhuvpxCkHZkN0KQo4
-NWBq63ZTCUscDE19SAw97r9ra4Mk9kvYZjZUM2HXNaS/wiLT7YoV2Ze9dJdj8YQx
-dwwo0gH6NNdRj+RolbnoL6tfwYzdrrZzFNJEcO4uCzeYHRJY5NwOU0xt19B2gsNn
-C/iathUI
-=PH3z
+iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmU4Fi0ACgkQuCdsD4Ua
+rX5h8gv/Rdtls4V+DP6RLTM2PvX0C4RRfWSQA+Q+smP+v5W7d09NX+eJs4JALOb+
+Ti0lj9qbrzibOj7V7KiWa8ngPViCoN4NtG3+9b9/0/76giigRgrsNZ1P5ZyzUSQ+
+F9hzuurtmHRYpB7VP4svrUTrJhaqlivkk1RNkN00yD1IzqoUGLWOu/a7MpX1PDeP
+lOvQwHiN6U6oOJUb6HJjjKviRGNiNa4fkDCf1vRgGOY/xCj3vg/1YbWcolxOE8YF
+U9HirNclzq9UzRvay3MNXgYBOxPHu+YcO2vf50wdGJgLQDLkIrxO8COgWxMXvnl5
+AEFyNdvWIIXW+cBEQpzwbl+CzuXtv1sunTj1KHUec6lPrZhfYT0JUYnHTWq5JEja
+tic85EQZbGomTb0RD9hh1/J6GYc0aWXEHlTpr7RZubHJAakuVmwOXzyiwOHAxPEb
+/n76cEe3EeiUcN719YYpwG0ZiZBcIDhHid+rDrM/icdIToMq1D7CLEWMYGiBUs3S
+hbQwtyOW
+=jfjC
 -----END PGP SIGNATURE-----
