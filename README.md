@@ -1,6 +1,6 @@
 # APT repository
 
-Peercoin APT repository for Ubuntu Jammy (22.04) and Debian Bullseye (11).
+Peercoin APT repository for Ubuntu Jammy (22.04), Debian Bookworm (12) and Debian Bullseye (11).
 
 Supported architectures: amd64, arm64, armhf and riscv64 (only Ubuntu).
 
