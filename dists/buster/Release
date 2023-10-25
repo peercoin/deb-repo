@@ -2,37 +2,19 @@ Origin: Peercoin
 Label: Peercoin
 Suite: oldstable
 Codename: buster
-Date: Tue, 11 Apr 2023 06:55:53 UTC
-Architectures: amd64 arm64 armhf
+Date: Wed, 25 Oct 2023 12:15:02 UTC
+Architectures: armhf
 Components: main-buster
-Description: Peercoin Debian packages
+Description: Peercoin Debian Buster packages
 MD5Sum:
- 875dcf0147a354278a58c2284deeeb2e 3448 main-buster/binary-amd64/Packages
- fad43843a340da1cadc2c36d9aae84e5 1164 main-buster/binary-amd64/Packages.gz
- 594218761d3e9dc253b82bb6b3404ff3 133 main-buster/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 main-buster/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main-buster/binary-arm64/Packages.gz
- ad64470df7c43935c4def2df369c0acc 133 main-buster/binary-arm64/Release
- 07fa80293fcdc0d2fd766159b35b8701 3376 main-buster/binary-armhf/Packages
- a230bc6d474beab7d1b719dff02b8a79 1163 main-buster/binary-armhf/Packages.gz
+ 0638d64dbdb8400bd026c42faf629a6a 3313 main-buster/binary-armhf/Packages
+ 1d270aeffded912c31c2a5353716273d 1154 main-buster/binary-armhf/Packages.gz
  a1d42f2a87adb6853585846ed861b7c8 133 main-buster/binary-armhf/Release
 SHA1:
- 7c47e7515f1715ffc82720fd83a9563dd8b71427 3448 main-buster/binary-amd64/Packages
- 331d906092b763b793a7ef41727281b4abb5ecca 1164 main-buster/binary-amd64/Packages.gz
- 223620e612c296bc5ebee0408f34474f11c2c934 133 main-buster/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-buster/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-buster/binary-arm64/Packages.gz
- 33e1284d870d473d8da0d28098d98ef8eda5e410 133 main-buster/binary-arm64/Release
- 688180f08be82871b0a3167ba2246492c43afe1a 3376 main-buster/binary-armhf/Packages
- 03d9ba51dca025ca0d79eded40512b99cbf70f5b 1163 main-buster/binary-armhf/Packages.gz
+ 5f31525efb3246cfac9deadc5b4b5c04e6d01cdc 3313 main-buster/binary-armhf/Packages
+ 46160857526379cc654b3a0658086ec0dd72e05d 1154 main-buster/binary-armhf/Packages.gz
  e21554b11d8e14522cf011941fcad1786e5c0a93 133 main-buster/binary-armhf/Release
 SHA256:
- 48b67d3c76eca48eee1ef5669ded378d429d8e326152461b6e8dd2156dedb55c 3448 main-buster/binary-amd64/Packages
- 3a7e8a348697504267874e8859a75333b066bc61b835353d97df36e6c65a11ca 1164 main-buster/binary-amd64/Packages.gz
- 1b74c49a696734aaecaac5e8fff53d852489fef3b6ab335398b32acc15abd19a 133 main-buster/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-buster/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-buster/binary-arm64/Packages.gz
- 804962a67b220223a36d3dc0f239511cbe65194e923b27913e06cec8c2a965f3 133 main-buster/binary-arm64/Release
- 189cf873a20114ead36c05b4f11e9d332549542bc55696b419bc8ddc26f4273b 3376 main-buster/binary-armhf/Packages
- 78296799439ca15cef7b299a77c41c497777913c37032d0b231435ca3467ec5a 1163 main-buster/binary-armhf/Packages.gz
+ 25476988c55e93cc17e795fb7a8cea23c710173214afe772b5c04f86c01abec6 3313 main-buster/binary-armhf/Packages
+ 70b3dfbfd0090632b264b4685c3999fac52414711097018227c2fac31bf6986f 1154 main-buster/binary-armhf/Packages.gz
  ba95c277e7f6ec586107da95c281f9f731705776aee73b5ed2930ee88881c5b1 133 main-buster/binary-armhf/Release
