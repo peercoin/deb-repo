@@ -1,18 +1,18 @@
 Origin: Peercoin
 Label: Peercoin
 Suite: oldstable
-Codename: buster
+Codename: bullseye
 Architectures: amd64 arm64 armhf
-Components: main-buster
+Components: main-bullseye
 Description: Peercoin Debian packages
 SignWith: B8276C0F851AAD7E
 
 Origin: Peercoin
 Label: Peercoin
 Suite: stable
-Codename: bullseye
+Codename: bookworm
 Architectures: amd64 arm64 armhf
-Components: main-bullseye
+Components: main-bookworm
 Description: Peercoin Debian packages
 SignWith: B8276C0F851AAD7E
 
