@@ -1,0 +1,6 @@
+Archive: stable
+Component: main-bookworm
+Origin: Peercoin
+Label: Peercoin
+Architecture: armhf
+Description: Peercoin Debian packages
