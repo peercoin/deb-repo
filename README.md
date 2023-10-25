@@ -23,6 +23,20 @@ If something goes wrong, try this:
 apt-get --allow-releaseinfo-change update
 ```
 
+On October 20th 2023, GPG key by the maintainer has expired. This was not noticed until 22nd and hs caused distruption.
+It would cause error message like this:
+
+```
+W: Failed to fetch https://peercoin.github.io/deb-repo/dists/bullseye/InRelease  The following signatures were invalid: EXPKEYSIG B8276C0F851AAD7E Peerchemist <peerchemist@protonmail.ch>
+```
+
+To resolve, re-add the key from the repo(s) as it was updated.
+
+```
+wget -O - https://peercoin.github.io/deb-repo/peercoin.apt.key | sudo apt-key add -
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B8276C0F851AAD7E
+```
+
 ## Available Packages
 
 peercoind
