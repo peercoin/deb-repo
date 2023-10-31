@@ -4,6 +4,8 @@ Peercoin APT repository for Ubuntu Jammy (22.04), Debian Bookworm (12) and Debia
 
 Supported architectures: amd64, arm64, armhf and riscv64 (only Ubuntu).
 
+Packages for legacy Debian (Buster) are oferred only in armhf architecture.
+
 ```
 sudo apt-get update
 sudo apt-get install apt-transport-https wget
