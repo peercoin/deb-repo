@@ -1,8 +1,8 @@
 Origin: Peercoin
 Label: Peercoin
-Suite: stable
+Suite: oldstable
 Codename: bullseye
-Date: Tue, 24 Oct 2023 17:50:57 UTC
+Date: Tue, 23 Apr 2024 13:25:26 UTC
 Architectures: amd64 arm64 armhf
 Components: main-bullseye
 Description: Peercoin Debian packages
@@ -13,8 +13,8 @@ MD5Sum:
  0d9a6280f6bb0cb2ade15a1afc6e325c 3348 main-bullseye/binary-arm64/Packages
  e7f5fefe7c2c13c3de161b92e075d308 1161 main-bullseye/binary-arm64/Packages.gz
  859469f94a198236c4953952bbb7007b 132 main-bullseye/binary-arm64/Release
- b162f3ffe608e1d1d20d47b22f53735e 3348 main-bullseye/binary-armhf/Packages
- 891ccb37bd5838f84b4269aa22840d86 1165 main-bullseye/binary-armhf/Packages.gz
+ 6ab24ec40d92b60f14cdf3e3a63fd297 3348 main-bullseye/binary-armhf/Packages
+ f831a7ecaf2cfdbf03549fcfe96f0324 1166 main-bullseye/binary-armhf/Packages.gz
  4ed184059e71d51306dfd1807734f96e 132 main-bullseye/binary-armhf/Release
 SHA1:
  2cc4ccdaa35963e05e67d80f9291be3c66f59065 3350 main-bullseye/binary-amd64/Packages
@@ -23,8 +23,8 @@ SHA1:
  87f00e84c1e95566ffc552adaa57fe0963cf7c1e 3348 main-bullseye/binary-arm64/Packages
  3058274a81da28d00d6b0d02cf8e835c16e9d128 1161 main-bullseye/binary-arm64/Packages.gz
  f5ee2dffac5088949e2d5c5caa73770a89b3e13c 132 main-bullseye/binary-arm64/Release
- 6e0a37300cc686803c5fce389ac44af9a0ef3db4 3348 main-bullseye/binary-armhf/Packages
- 2c24080f89e6221da6c3a23639a62570889143ff 1165 main-bullseye/binary-armhf/Packages.gz
+ a5d33430552f5fcdd3862cd9781edb2134023cda 3348 main-bullseye/binary-armhf/Packages
+ 48cae15d99f561748e9b60bde53591da09015253 1166 main-bullseye/binary-armhf/Packages.gz
  17f022e18ac27309e881ad5499512a44c8bacda1 132 main-bullseye/binary-armhf/Release
 SHA256:
  f5cd97ac95b748dfeecf42dc1c10d78060f4101954d5938c43743cf538b2d221 3350 main-bullseye/binary-amd64/Packages
@@ -33,6 +33,6 @@ SHA256:
  7aaa6b3a75a4220d972199215b354405f01d021c06fdb8cdfd241a37ade1caca 3348 main-bullseye/binary-arm64/Packages
  ad1813562c99edabba9d1637d44f959e1b47ff34b67189ff1fbc1fd3b78da969 1161 main-bullseye/binary-arm64/Packages.gz
  d5a46f1cff853218cc3e738d3bce2264061d3fa4f3977ed6853532deb5cf7ed1 132 main-bullseye/binary-arm64/Release
- e1e95ca7814a6380c72bcf19405d47daea2e1652c390d33573ee79e8b8a0543d 3348 main-bullseye/binary-armhf/Packages
- 26b263070f7b832527b78b7325ed5446c9623ee3c1abde71df175cf1a49fff36 1165 main-bullseye/binary-armhf/Packages.gz
+ 064d2723592a418a0775da7048b05102bb8b02c7b5180290eb179fcb48ddeab7 3348 main-bullseye/binary-armhf/Packages
+ dce7e0da8ef5fe93015e14e689d41344c3bf78ff6b0268db1311ce126ffadcf1 1166 main-bullseye/binary-armhf/Packages.gz
  804d71bc11e1ea0e718f24227074ec175146ea1bfc39925fb450d0f3898f40ca 132 main-bullseye/binary-armhf/Release
