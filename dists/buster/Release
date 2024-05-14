@@ -1,20 +1,24 @@
 Origin: Peercoin
 Label: Peercoin
-Suite: oldstable
+Suite: oldoldstable
 Codename: buster
-Date: Tue, 23 Apr 2024 14:19:39 UTC
+Date: Tue, 14 May 2024 11:25:57 UTC
 Architectures: armhf
 Components: main-buster
 Description: Peercoin Debian Buster packages
 MD5Sum:
- e73d7174c4cceff7728b9af5278fc1ef 3314 main-buster/binary-armhf/Packages
- 15b9c51e869a5a62d14a8d3ec33f3f08 1156 main-buster/binary-armhf/Packages.gz
+ 13c9d14fdeb423b819a1723649dc5cc8 3725 main-buster/binary-armhf/Packages
+ 606eb8e6b46fad16378b9b7a6f119fa3 1392 main-buster/binary-armhf/Packages.gz
  a1d42f2a87adb6853585846ed861b7c8 133 main-buster/binary-armhf/Release
 SHA1:
- 3a9c25db233c993546fb1cda1c73ccd46d4fd5c1 3314 main-buster/binary-armhf/Packages
- 9b3adb88832c162a83c8533db5c7640678e35343 1156 main-buster/binary-armhf/Packages.gz
+ 24875fbe904d5405a1f8c74f2d442bb347e8275c 3725 main-buster/binary-armhf/Packages
+ e4a4fbc7076e0080cbd1c99c122ab9710da1a17f 1392 main-buster/binary-armhf/Packages.gz
  e21554b11d8e14522cf011941fcad1786e5c0a93 133 main-buster/binary-armhf/Release
 SHA256:
- 11ae568ed60b49eca9c2e2ec71109429eb509d997839fd1f2bfc6c789b86ef12 3314 main-buster/binary-armhf/Packages
- a5d1f91fdda4aa3e266833c77f4097c3c7e3ceb8d961b1acd8d7f1ec5ae28ac8 1156 main-buster/binary-armhf/Packages.gz
+ deece1ee61ceb10956f6b8dbb178b1dace3086aec94ba9dda9e025072c5aabeb 3725 main-buster/binary-armhf/Packages
+ 5d4e3a62270ffee2196e4a92336637cb65041b7429514a724ccc4049030d94c2 1392 main-buster/binary-armhf/Packages.gz
  ba95c277e7f6ec586107da95c281f9f731705776aee73b5ed2930ee88881c5b1 133 main-buster/binary-armhf/Release
+SHA512:
+ babf4c90e1577e1dfc41da584d35bc5cd899fe8f6dca9abc73eaad100ab39573333b4bed8fd135af4e7af1fd1ae516bf5a181f49b124d5bc6e95b7949b914438 3725 main-buster/binary-armhf/Packages
+ 310d708da5afb2199f371e436e242d747ffd11e5cb79d639bf4ecfd02242c63411b4cf5d47138329279263c61704def9d10a3ea65881cc4ef33608d4b9a6b61d 1392 main-buster/binary-armhf/Packages.gz
+ f8bb6c517e886cf7d179399e9b18d2d7e80f489ec53431fc3c5ee895b74f825893b09ffaa349f9e34b600ddaedc8030d483602a8e4730e9364c6119cca8cb400 133 main-buster/binary-armhf/Release
