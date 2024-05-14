@@ -5,7 +5,7 @@ Origin: Peercoin
 Label: Peercoin
 Suite: stable
 Codename: bookworm
-Date: Tue, 14 May 2024 13:29:35 UTC
+Date: Tue, 14 May 2024 14:16:21 UTC
 Architectures: amd64 arm64 armhf
 Components: main-bookworm
 Description: Peercoin Debian packages
@@ -16,8 +16,8 @@ MD5Sum:
  1a071a5dbd0100be8d215092ee45e26a 3752 main-bookworm/binary-arm64/Packages
  bf80a3f4409b446beea35395f1474fd9 1404 main-bookworm/binary-arm64/Packages.gz
  985054247fdd29119ed74e0e90689f07 132 main-bookworm/binary-arm64/Release
- acaa66c161308b3aa8971be485216ad1 3339 main-bookworm/binary-armhf/Packages
- 87b8dae65e2023fa652ee06a19643bbc 1168 main-bookworm/binary-armhf/Packages.gz
+ d8c1b29c03101366a56cf647e2b366bb 3750 main-bookworm/binary-armhf/Packages
+ ab10d3a7064a7b743b85dd4e6500094b 1403 main-bookworm/binary-armhf/Packages.gz
  45bcc98f4f5cb7f2f566668a11fc1a00 132 main-bookworm/binary-armhf/Release
 SHA1:
  561617f552d48f698171c9fbe66a48f89303c178 3752 main-bookworm/binary-amd64/Packages
@@ -26,8 +26,8 @@ SHA1:
  d3833b57a535dc1ddd52249aea2a80258bcfd32b 3752 main-bookworm/binary-arm64/Packages
  ad617f2f80b18620f47ca3d562d54ed4aa911a77 1404 main-bookworm/binary-arm64/Packages.gz
  8cf3a95a565161e4542fed40432bcd0815ba3e8e 132 main-bookworm/binary-arm64/Release
- f7992170d8dda25ac0f45f9e97f1f2380109cf0a 3339 main-bookworm/binary-armhf/Packages
- b12d86f04e004017039d400792aecde62c55f9b8 1168 main-bookworm/binary-armhf/Packages.gz
+ 827a68f0efd53885cf39a4a78a4e8025c76dc64d 3750 main-bookworm/binary-armhf/Packages
+ ab813793905af9408dc0f823f24cce209cb75a8e 1403 main-bookworm/binary-armhf/Packages.gz
  0fa01f81a68a6f7d554a91aabbe4f11af9b2ea17 132 main-bookworm/binary-armhf/Release
 SHA256:
  0762af9b0ebcb27eeeb373b39017ae450f90a0c350fb049878036c67c58f6e8f 3752 main-bookworm/binary-amd64/Packages
@@ -36,8 +36,8 @@ SHA256:
  65a99dee17c37d9500798b01c5a90b934de3a989720d34eb2146d7932e10d5f0 3752 main-bookworm/binary-arm64/Packages
  5b099ff90b37c1b90da2e98a3bd929e50d6ef3a398642599c1f2cd7aee1f4c2d 1404 main-bookworm/binary-arm64/Packages.gz
  4df92482ac60ec9c87ea1d040513b064d6bd31a2cbe4d199c9b25ceb7260eb78 132 main-bookworm/binary-arm64/Release
- a8a0d68443266c0b452fd7c9e6769206226a90a6946eecac4cb7ca9b2a267d9b 3339 main-bookworm/binary-armhf/Packages
- 2ae702afd915f18f13b21a94d77eb739e143aa2456319fe8c8337d3b9ee65baa 1168 main-bookworm/binary-armhf/Packages.gz
+ aec59b913b84537552affa84a66db555fb4c6c5ea83fc5e5753c31c310716e79 3750 main-bookworm/binary-armhf/Packages
+ 6ce3456830753b5f8d63defdf5a35fffae1e14b5ea66051d369857836c0632ac 1403 main-bookworm/binary-armhf/Packages.gz
  a072b1e9654ce4b5ce218095c005b88c61b5c9d68cf4751bb0f34eaf2ee5047d 132 main-bookworm/binary-armhf/Release
 SHA512:
  af073a21a441f3870c2f327b7bd73859640b6a940a409e04c61d86b6e300ef75363ba799b6cfa3a440ca5b8243929986393a997e3a27b8d24301dcc198056886 3752 main-bookworm/binary-amd64/Packages
@@ -46,20 +46,20 @@ SHA512:
  35bc135d96e771e467353bd334e2ec3a9f3cd93d04d1c7df411b3c10f63195a3083eee2a99806055c89807bac846591f12a6589ebb59981bda542c67c7302f2a 3752 main-bookworm/binary-arm64/Packages
  1751ce1b9da83e50ad0de869a032db723dbeebafc95cd84d2da3ba45add34264ffd9f05d082af640d1efd82201201bcb0f7be7a6d3a7b2ded1730eaae96cba91 1404 main-bookworm/binary-arm64/Packages.gz
  4c596a32a130a27ce92bb45e5a1f2626df12828dc90284d7062548b195125eef0cc63f13ff26b155da26cb1914f14cc0e4edd700345bd117706e9b8c3de1bf37 132 main-bookworm/binary-arm64/Release
- 3aabe300cf37129204a08e98adb0a46b8926ce19ec2fc357687f724e0d5d987ff6c70d0a2553fe91936cde1cf4b7220b7ee7d115d437c9c6e43024879eee108a 3339 main-bookworm/binary-armhf/Packages
- 3ea2ba1e24600759e6ecc390e131f15e42aa374358b345f2a4c98b58a52f494466533adf59f77c869493c5d7fc674ec12d0582553efbfe6d0875e9a52ea2f360 1168 main-bookworm/binary-armhf/Packages.gz
+ 6d280715331b1a2c96b0d34f83a375674833611c81257e3bcc29f6f30642884921ba9821eb51050a365029bce69575a54490fc2d6d6074e3b0240e0783b0d619 3750 main-bookworm/binary-armhf/Packages
+ 482a5927116b2d25844bb51d1e2b04b4147ac2d3ed0a0d03f234a639d5673a285b13ad1843eb550fd25525a56acb193f03c86f8330181ee3fa128feed38db92a 1403 main-bookworm/binary-armhf/Packages.gz
  0924982a1dea95d05d1478f149b23cf1795c0010a12dd608d775a88de6100ff630a92155180d4ff4e84f5a8e74d12d84fada9567e89f6ae35d91238a00383014 132 main-bookworm/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCAAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmZDZ0AACgkQuCdsD4Ua
-rX4EgQwAlFoq2dFz4k7yHsbJJljOikmS+FGi25y7eouBXl91VUsLuL2oxpR1S9Xt
-bCHw9Kmuo7qrFBRTimU9ke0ibLAGAyiV5dSngAeTjYjZVT7JVFbNFboVPO2ewxMD
-p4r2fSTLOtCSGRHZOxGo2qXMH2hKeNgNpDxbO8YrGQme96HhvAfNgJ1QPSE3ydtx
-cFXBmkTwmvqtXxbX/S5bwb+e7Vg8p+bSTv1v40RVXEZmx4ZSTXO6eoUrUuu3pYBU
-vFu6MhBlitBtn7y66YO96pc9nBFpY301PsCU2ke9PHlaJgvgXEtrVBFMBhRvJqT5
-4GHmbXwv0u9B5HnOoeECX7WMGVBGIdwVR+vhzsOckZldZGC38IgVSsDkVoe982wt
-QHrPj1q+dyHCgKMjGiuNwDCmar9qMRMQ3ZJsvc/L613xQjxorSUhmCQUgHwnkHKM
-gmdmNnipYZC4En2T8iuDkpnZ2UJSbC3AOErMFA8JYRQi8bUxweTWdad9vBdxlYUr
-ZNlYztIS
-=Ve9Q
+iQGzBAEBCAAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmZDcjUACgkQuCdsD4Ua
+rX79wgwAoxR/5YLiwyRHc3ViCsTWKJOjqLJEelifu8sIYWYWFCiGSxLGdvEEwRS9
+V4okJMWeaXjqAiu94k+YsWmZ+ue8Ubr8SPDWkP3ke2eyO6AvD5sgtZFHDbg6dfUU
+CuGzvreVVBksQPuxpr+VQGygvLJstinjNm2t0dH+XI04p2Pvoncjdl92o52etUUA
+oHX9lQ6jzLM4nurvDJYz57xLG0o+ymh+8VPZwGvrAwMUX1IFtEOVjRlaGM6ydVP8
+ECXb1QIe4pqGkv3C0T1bgMlFRGmBKcD9mimEJXsT5cUb7qQC3XIWQFOoNUy4Bogo
+XsOE27y7yYLi9NxmnKzWXLJm7YkGztFzRddaRiqpVXe61iZ66Jz4Hf+HLnKduSmI
+8r859a3PW+Qevzw+tQI08iFrKhQLVw3YF8C51k58NgeKkHgzrJdNGkGKyJfXVCi/
+2DPccpzvrwXX0N/MgofFaVTYpG9/qDe6WTM8Cbf8PO1osAr1rOyIOLSo4nD+QsYc
++UWCBVvs
+=cdGr
 -----END PGP SIGNATURE-----
