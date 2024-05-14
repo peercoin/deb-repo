@@ -1,6 +1,6 @@
 Origin: Peercoin
 Label: Peercoin
-Suite: oldstable
+Suite: oldoldstable
 Codename: buster
 Architectures: armhf
 Components: main-buster
