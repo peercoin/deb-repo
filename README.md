@@ -11,7 +11,7 @@ sudo apt-get update
 sudo apt-get install apt-transport-https wget
 
 echo "deb https://peercoin.github.io/deb-repo/ $(lsb_release -cs) main-$(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/peercoin.list
-wget -O - https://peercoin.github.io/deb-repo/peercoin.apt.key | sudo apt-key add -
+sudo wget -O /usr/share/keyrings/peercoin-archive-keyring.gpg https://peercoin.github.io/deb-repo/peercoin.apt.key
 
 sudo apt-get update
 sudo apt-get install peercoin-qt # to install QT client
@@ -35,7 +35,7 @@ W: Failed to fetch https://peercoin.github.io/deb-repo/dists/bullseye/InRelease 
 To resolve, re-add the key from the repo(s) as it was updated.
 
 ```
-wget -O - https://peercoin.github.io/deb-repo/peercoin.apt.key | sudo apt-key add -
+sudo wget -O /usr/share/keyrings/peercoin-archive-keyring.gpg https://peercoin.github.io/deb-repo/peercoin.apt.key
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B8276C0F851AAD7E
 ```
 
