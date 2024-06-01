@@ -5,7 +5,7 @@ Origin: Peercoin
 Label: Peercoin
 Suite: oldstable
 Codename: bullseye
-Date: Tue, 28 May 2024 09:41:17 UTC
+Date: Sat, 01 Jun 2024 17:13:30 UTC
 Architectures: amd64 arm64 armhf
 Components: main-bullseye
 Description: Peercoin Debian packages
@@ -16,8 +16,8 @@ MD5Sum:
  0d9a6280f6bb0cb2ade15a1afc6e325c 3348 main-bullseye/binary-arm64/Packages
  e7f5fefe7c2c13c3de161b92e075d308 1161 main-bullseye/binary-arm64/Packages.gz
  859469f94a198236c4953952bbb7007b 132 main-bullseye/binary-arm64/Release
- 89f1af5f6b484451ca3a52137cf8f72c 3823 main-bullseye/binary-armhf/Packages
- abe6398b1a7a91336ecf06c004327b1e 1413 main-bullseye/binary-armhf/Packages.gz
+ 1b62335ec90dc2b3084b0a23e541d091 3823 main-bullseye/binary-armhf/Packages
+ a0f64c33cc200241d4659225ddac7e9f 1416 main-bullseye/binary-armhf/Packages.gz
  4ed184059e71d51306dfd1807734f96e 132 main-bullseye/binary-armhf/Release
 SHA1:
  47d49ec79ecf5187783c202d409b41ac20524cfe 3761 main-bullseye/binary-amd64/Packages
@@ -26,8 +26,8 @@ SHA1:
  87f00e84c1e95566ffc552adaa57fe0963cf7c1e 3348 main-bullseye/binary-arm64/Packages
  3058274a81da28d00d6b0d02cf8e835c16e9d128 1161 main-bullseye/binary-arm64/Packages.gz
  f5ee2dffac5088949e2d5c5caa73770a89b3e13c 132 main-bullseye/binary-arm64/Release
- 9391d81353508919143f0c055efa47ab81cedb13 3823 main-bullseye/binary-armhf/Packages
- 732a5ca5577cd6f78f325bdd271283076ca6e1f6 1413 main-bullseye/binary-armhf/Packages.gz
+ 3d90a2f7b5b31c945a76d65ada7c720dc9e9dd4d 3823 main-bullseye/binary-armhf/Packages
+ 0640db97df75b4d40ed1904784cb5e893ff946d4 1416 main-bullseye/binary-armhf/Packages.gz
  17f022e18ac27309e881ad5499512a44c8bacda1 132 main-bullseye/binary-armhf/Release
 SHA256:
  08a15c9511f70d712cf02e527b3b697527d7f0337afffc3a43d5cc552e8a3d2b 3761 main-bullseye/binary-amd64/Packages
@@ -36,8 +36,8 @@ SHA256:
  7aaa6b3a75a4220d972199215b354405f01d021c06fdb8cdfd241a37ade1caca 3348 main-bullseye/binary-arm64/Packages
  ad1813562c99edabba9d1637d44f959e1b47ff34b67189ff1fbc1fd3b78da969 1161 main-bullseye/binary-arm64/Packages.gz
  d5a46f1cff853218cc3e738d3bce2264061d3fa4f3977ed6853532deb5cf7ed1 132 main-bullseye/binary-arm64/Release
- 276915818021d7747ad9d137e49979f1879697ae2f4a3dd8341f1133ac79c457 3823 main-bullseye/binary-armhf/Packages
- a79b77a93c3502371ecec8335e4a963d5030398b163d97e149ea1ca12399a343 1413 main-bullseye/binary-armhf/Packages.gz
+ c260d8554a7033c35a71ac292c5d3050a7044969c2afc8f068e412275e07a7f2 3823 main-bullseye/binary-armhf/Packages
+ 5d2eb44800aa531f25c53322d12517ac4c59ca7345599af4293f52da2ed3749e 1416 main-bullseye/binary-armhf/Packages.gz
  804d71bc11e1ea0e718f24227074ec175146ea1bfc39925fb450d0f3898f40ca 132 main-bullseye/binary-armhf/Release
 SHA512:
  f6eb3818a3b1e35671581d5e9bddbd81bb75981ba68639b9560cd56f0fec195a6bf1aca4dc0b196beda4277ef663a11c42d7e73571020273dc8048e124bfe088 3761 main-bullseye/binary-amd64/Packages
@@ -46,20 +46,20 @@ SHA512:
  892346a55b74e63407604893d9367da3787c4529c5294dadf5d0af50d2abfd4ba40ca07155e2438fc8ab588263792f7f2c07b76d37496c9f3d7bd84eba3ffeda 3348 main-bullseye/binary-arm64/Packages
  c10663d3e1d8fe5c8cd7ee1461e1882d1c4587a798f5e180dca67addc6c22e3c6c474c58754f033682bb66134fae8e1dbf7450cab1d8b633e00abe3dbaffabe8 1161 main-bullseye/binary-arm64/Packages.gz
  a7034273ea9450f3afecd83a372beab9ec8307eaa73fc42b42141f16b41df359b304fce9b33bbdb725087de2a7da41630221b7dd7025d7aaf88b35e690276f71 132 main-bullseye/binary-arm64/Release
- f3be3c343d06651fc3b6b4a478ea5c0504a88f2c31929c120dfb58d6c173a9e7338136b4d8a48697cf5b0f5fc392373aac801f139dd60cb7ad02523978744003 3823 main-bullseye/binary-armhf/Packages
- 2be6ac0fbb9d0982c346e82543e5b8a3f2cd336e308802b2ac7407a263432d82f051684d66f1e1f062c01c81ee5fc650a8a7faa70e9ebb9721ff69d39b700b9f 1413 main-bullseye/binary-armhf/Packages.gz
+ 6356eb521605e3cf14fd2c909fd916cb2c777754edc3143047367a53b1e6aae5324aded15295815fc3b133b8295baacfb88cad89d4b8d8b8957d440911961274 3823 main-bullseye/binary-armhf/Packages
+ 730678052e83024e81f84c4af9b9f96047adbb8d2ae2657e5af2908132f6490a2c40f2ad30a2af3da20c326b2067dd7f5c8ec84b8af66a63a612eec1d7b48d99 1416 main-bullseye/binary-armhf/Packages.gz
  20f438102744ba57d23f7aa659d44fd4246c55bc41da246daa6acd83198a4e89e38f0ecc4edf7ce28b8353de4a16b09325f401f4aca0a65801ffa840b2027884 132 main-bullseye/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCAAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmZVpr0ACgkQuCdsD4Ua
-rX4yygwAqqKpYOYQD+0mmrf2PLSiNNxTJzPvg248Y6x8Rb+/yhy6gSwRvNsDBg+4
-1E6VozTBky776jdWISdkor7d9f0sArEWscXNxslE+Ek9iDdL9OAg3FIxkUx3tXQR
-33jjILB2+uiWCmF4DI6uv7KUHeF7eWjyB0hdGPIl3iKsfMd9WW5U6lhVcQQABOlj
-N04DEz8stfETZISeSR3eIrUNlegpfRl6SnLPk7ihiNlgVLf17klDE9HCFIHpUEdP
-01Ty5QTKYotmxoH5K0EelBYKcoWWtjhYZITEvEr8Gb+L/56/y2VRXMuyPBB892cB
-FGQya1BCVvQ6x++LID1MkJyDGXy5Q7GQ18qKKdO+JfpTQwwvzt9T/TX3mrEbR7ZT
-nfn9wjt3LJ9AQWcZQHVZboV3QcMJSjOOsnxN1eeYWpLOoyrVP2Y3wtbUxCkTboL1
-2sWzbeEd1s3tNvvtoUBAedhMpmFiXBoZw5h8jusFePiy35yqilP4XsSmwkBVMu9Q
-STHYzref
-=3VIa
+iQGzBAEBCAAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmZbVrsACgkQuCdsD4Ua
+rX7CkAwAnuAzwXoY3YVz9YIlUGOIpUqOzzsVX41e8lzFltN8UD52ih9r2Zlw71NK
+Gpp0VSmlZFBEl/oYs8Zy3RuFM4gePvO5d8Mrj0tVJGr9l15bC+Yzft2z5oVtXmi/
+6Ybe3WK6v4CxWrbLgSuv/R5uie3RntmKZswvBtWkheh3NGwpo9duAOOFYieinhjS
+ki0siXzInpIBsEjxPYeiAnGjgxP8+ma+0TqegZ/gyInVKDi2iGpoVJ5dGYcdTEgj
+L1zs1mzAnNx70RiDPyXvQsRRvj0ANBiliS/CUefWO/IrpkuUIDvTba7qEe5jjWca
+8pTJkQvNVdZeWIZbixG18/VS7qf+QcBtUKN2aPjcLUqgkm9DTq+nLbVJ5UqRUEw9
+JDdlcO+Tq6ZPBdsIyIO9U20bKCjbBQAPfokfWaiFLeuNhytkTMDtYvn1ZlkOcIpy
+6dY/fzF0zDEhn6gwa8hSUrJ8iFw+bh2rAH1gBwQKeqajT7qMHZnFD/fW8Iq+UFmS
+Qr8SCR1n
+=x+Qi
 -----END PGP SIGNATURE-----
