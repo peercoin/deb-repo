@@ -25,7 +25,7 @@ If something goes wrong, try this:
 apt-get --allow-releaseinfo-change update
 ```
 
-On October 20th 2023, GPG key by the maintainer has expired. This was not noticed until 22nd and hs caused distruption.
+On October 20th, 2023, the maintainer's GPG key expired. This went unnoticed until the 22nd, resulting in a disruption.
 It would cause error message like this:
 
 ```
