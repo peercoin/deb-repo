@@ -11,7 +11,7 @@ Origin: Peercoin
 Label: Peercoin
 Suite: oldstable
 Codename: bullseye
-Architectures: amd64 arm64 armhf
+Architectures: amd64 armhf
 Components: main-bullseye
 Description: Peercoin Debian packages
 SignWith: B8276C0F851AAD7E
