@@ -20,7 +20,7 @@ Origin: Peercoin
 Label: Peercoin
 Suite: stable
 Codename: bookworm
-Architectures: amd64 arm64 armhf
+Architectures: amd64 arm64 armhf i386
 Components: main-bookworm
 Description: Peercoin Debian packages
 SignWith: B8276C0F851AAD7E

@@ -1,0 +1,71 @@
+Package: peercoin-qt
+Source: peercoin
+Version: 0.14.6-1
+Architecture: i386
+Maintainer: Peerchemist <peerchemist@protonmail.ch>
+Installed-Size: 20340
+Depends: libc6 (>= 2.34), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 7), libminiupnpc17 (>= 1.9.20140610), libqrencode4 (>= 3.2.0), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.15.1), libsqlite3-0 (>= 3.7.15), libssl3 (>= 3.0.0), libstdc++6 (>= 12), libzmq5 (>= 4.0.1+dfsg)
+Homepage: https://www.peercoin.net/
+Priority: optional
+Section: utils
+Filename: pool/main-bookworm/p/peercoin/peercoin-qt_0.14.6-1_i386.deb
+Size: 8579308
+SHA512: 5ca0b750ab2d396a0827f95183fb4a13825ec6354138ce2e9478fb90d6253f75d298428d6a97164c7e3609ccb13af797b627fc05deda8667a28a9fe18fe97c5a
+SHA256: 061d26c278c02476b7206d319b3c731d86499c370800244abfec99fb1e57e617
+SHA1: 283b21fe6a8cdaf90dd069cc42b34e5d8219145c
+MD5sum: 57718329b15254c6492c408185ed22c2
+Description: peer-to-peer network based digital currency - Qt GUI
+ Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ .
+ This package provides Peercoin-Qt, a GUI client for Peercoin based on Qt.
+
+Package: peercoin-tx
+Source: peercoin
+Version: 0.14.6-1
+Architecture: i386
+Maintainer: Peerchemist <peerchemist@protonmail.ch>
+Installed-Size: 13379
+Depends: libc6 (>= 2.34), libdb5.3++, libgcc-s1 (>= 7), libsqlite3-0 (>= 3.7.15), libssl3 (>= 3.0.0), libstdc++6 (>= 12)
+Homepage: https://www.peercoin.net/
+Priority: optional
+Section: utils
+Filename: pool/main-bookworm/p/peercoin/peercoin-tx_0.14.6-1_i386.deb
+Size: 5379572
+SHA512: 6e8358b2bc85f019244569df1e6ab1841a19531d33ea6262bb0561c0fe7b0db5d4a826dfb654a810860678dbe0ec2a0e085c9a8159ebf8887b73b95208ce4025
+SHA256: 26dcdcb84be07d0695d6448c9cc4d5a694450c6410feadfcb77d48b799f97e1d
+SHA1: 0b51a049e81b7679e9ef1a3e75b4f7f050f91f88
+MD5sum: 116eb0b6514062edfab40b291c8f01c2
+Description: Peer-to-peer digital currency - standalone transaction tool
+ Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ This package provides peercoin-tx, a command-line transaction creation
+ tool which can be used without a peercoin daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.
+
+Package: peercoind
+Source: peercoin
+Version: 0.14.6-1
+Architecture: i386
+Maintainer: Peerchemist <peerchemist@protonmail.ch>
+Installed-Size: 12737
+Depends: libc6 (>= 2.34), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 7), libminiupnpc17 (>= 1.9.20140610), libsqlite3-0 (>= 3.7.15), libssl3 (>= 3.0.0), libstdc++6 (>= 12), libzmq5 (>= 4.0.1+dfsg)
+Homepage: https://www.peercoin.net/
+Priority: optional
+Section: utils
+Filename: pool/main-bookworm/p/peercoin/peercoind_0.14.6-1_i386.deb
+Size: 4720320
+SHA512: 6643ee56a3b9feb5b63ea92fafd05aac6800710b7b126ecb84de6b209db35c52f6a893919b1165db2b638d82b515b87b99a911872ad6378d5035f10157b0bb07
+SHA256: 8addf326e4d662191c2ab6a035c71a97daddd1bb8a8617977795775e776aa39d
+SHA1: 86fb3ed58a9910574caacbcecdfd4c719adc54fe
+MD5sum: fb899c07051b9093d4347306780624e2
+Description: peer-to-peer network based digital currency - daemon
+ Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ .
+ This package provides the daemon, peercoind, and the CLI tool
+ peercoin-cli to interact with the daemon.
+
