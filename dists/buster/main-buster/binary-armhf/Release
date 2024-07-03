@@ -1,6 +1,6 @@
-Archive: oldstable
+Archive: oldoldstable
 Component: main-buster
 Origin: Peercoin
 Label: Peercoin
 Architecture: armhf
-Description: Peercoin Debian packages
+Description: Peercoin Debian Buster packages

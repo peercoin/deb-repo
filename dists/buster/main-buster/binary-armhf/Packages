@@ -1,6 +1,6 @@
 Package: peercoin-qt
 Source: peercoin
-Version: 0.14.6-1
+Version: 0.14.7-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 17400
@@ -8,12 +8,12 @@ Depends: libatomic1 (>= 4.8), libc6 (>= 2.28), libdb5.3++, libevent-2.1-6 (>= 2.
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-buster/p/peercoin/peercoin-qt_0.14.6-1_armhf.deb
-Size: 7547888
-SHA512: d3cf5eab997c5afbafcf214732e59e2089fc2a7c6f2869d36211cb94e6024281b96e290a9da2b58fa68e90437a8b66b8f04eabefae7961cb88f8b2356a9e337e
-SHA256: 3d792cce0e347939f72ab9162357f2b9d8dd4a1b0bd75e359b0cdada2ba714fc
-SHA1: 16a12bd33549853f23441f573212edccf29d673d
-MD5sum: 2c660f32ff1b860c12a5be6dead4cb11
+Filename: pool/main-buster/p/peercoin/peercoin-qt_0.14.7-1_armhf.deb
+Size: 7556708
+SHA512: 18cdddd2407642dd0b006d1ec3103c94c659173054e7930c6947d209181fd381c9e12ea66a9aa8b63eaa289c9c4f1f94a7e11b203011863a648251ceb49c97c0
+SHA256: 49131ffbc2488e3ffe20dfe87f6b7f9baaba658c3d3ced0337c23646a448d326
+SHA1: 62dc934820a52a373928d6a00946272c5c8689ad
+MD5sum: 7a880a443711c78ab2fc14496edb5a75
 Description: peer-to-peer network based digital currency - Qt GUI
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -23,7 +23,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
 
 Package: peercoin-tx
 Source: peercoin
-Version: 0.14.6-1
+Version: 0.14.7-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 11119
@@ -31,12 +31,12 @@ Depends: libatomic1 (>= 4.8), libc6 (>= 2.28), libdb5.3++, libgcc1 (>= 1:3.5), l
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-buster/p/peercoin/peercoin-tx_0.14.6-1_armhf.deb
-Size: 3298772
-SHA512: ceed71f34c4681ac28c6ad2b66f91cff2917596c4f2288095cd4a2c3be70aa02c353089b93b3122ab1bdf9b02070a3dc3afcc16dbd52b934c290520fa8abaa00
-SHA256: b8a198ac7cc1f4c51fe128ca3f21e2fcbf5181ba7e12c73b60fc1a8362b2c800
-SHA1: 9067ae81738ebafc335c775bc9e41f61c2dbb337
-MD5sum: 8e29b90c3184614576be57d7ec62ec2a
+Filename: pool/main-buster/p/peercoin/peercoin-tx_0.14.7-1_armhf.deb
+Size: 3297916
+SHA512: 1a9a3d52dda7ea57f1e87bf7ac4126c55257a6e4a7ab1960a5e15a935ce93a63d6940ef241f11d43c0aa40e0b496e2cf6b308f474493b25d7acf5f0220a6e9de
+SHA256: 0f5cb915ff38968bc79dcd42b1a19e6b5bfbd15f65884f7b35e4a62e13746f67
+SHA1: acf372b58f9cf79652c81dcdb221eff07cff4937
+MD5sum: cb0528f52f72094132144ac2ef1f9eb1
 Description: Peer-to-peer digital currency - standalone transaction tool
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -47,7 +47,7 @@ Description: Peer-to-peer digital currency - standalone transaction tool
 
 Package: peercoind
 Source: peercoin
-Version: 0.14.6-1
+Version: 0.14.7-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 10116
@@ -55,12 +55,12 @@ Depends: libatomic1 (>= 4.8), libc6 (>= 2.28), libdb5.3++, libevent-2.1-6 (>= 2.
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-buster/p/peercoin/peercoind_0.14.6-1_armhf.deb
-Size: 3791612
-SHA512: d87dfe17e97b05d6e1d0b1b8cd83891168fb062df8afe5e7353bc1a9d281e6cd2f15f8424a688cffc86a55fb35f46e577277582369f1e749db3c96ebcd48c747
-SHA256: 21bf63b349813dce28f069803ca3c8c27d26a72095a52563ba62ff97c2b6271c
-SHA1: 03e87cdebb0159ceb58bd1cc35bbeee31fbf04e5
-MD5sum: 14662790a0365af809fbc8053d3ccea1
+Filename: pool/main-buster/p/peercoin/peercoind_0.14.7-1_armhf.deb
+Size: 3794276
+SHA512: 1f29e10a5fa8cab220e847f927a6e54e6c089da84c8914005657412fbcec383717408cce55564c99edad40b1c02d1d99e6039f5cef6bc814b45693a73d0ae054
+SHA256: c916dbc18eca9e72d07634d9b03c1d142801a2b297b8c0d10a136fb04822c173
+SHA1: 6047a709a9a0b5ccdc30bcb14b707a9ab1d931b9
+MD5sum: 3780aa33e1790f533d02dbc18a936ef9
 Description: peer-to-peer network based digital currency - daemon
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's

@@ -3,4 +3,4 @@ Component: main-jammy
 Origin: Peercoin
 Label: Peercoin
 Architecture: riscv64
-Description: Peercoin Ubuntu packages
+Description: Peercoin Ubuntu Jammy packages
