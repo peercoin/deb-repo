@@ -1,6 +1,6 @@
 Package: peercoin-qt
 Source: peercoin
-Version: 0.14.7-1
+Version: 0.14.9-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 17416
@@ -8,12 +8,12 @@ Depends: libatomic1 (>= 4.8), libc6 (>= 2.34), libdb5.3++, libevent-2.1-7 (>= 2.
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bookworm/p/peercoin/peercoin-qt_0.14.7-1_armhf.deb
-Size: 7585980
-SHA512: 50c800d3792fbd7a607c996eb6a1c5200938298822ee4b2d392066f4a412c19db2c072b272e6f2f56cfd7e77b7257b3cbc30648b428c43bff8b515da56b82e50
-SHA256: d94000f9e44f8880c27146afdfecc49b4ae83a591803fce1cf7e5491873ac7b0
-SHA1: 015076b56196aee0d7756840cdbce70b4247d09b
-MD5sum: 050b3cb67a42a4d752a85e00dce0f1f3
+Filename: pool/main-bookworm/p/peercoin/peercoin-qt_0.14.9-1_armhf.deb
+Size: 7582268
+SHA512: 04e029b1fa98edb52b164a901fe881696cf6c5edf5e7cb11c7454a1116c4c9cb7a0d3b8077fd4632e7153ee824923b0dece1e38e7119730b8e55dae7ce3950aa
+SHA256: db5c8a930d14c5595e91b937006805660b037c6ddfe6837d8a361537a70f5ecb
+SHA1: 743a2350ed9fd5ca46db11556f98b2f46c669fc8
+MD5sum: bb14658f400cf6f506056ef69b8b0164
 Description: peer-to-peer network based digital currency - Qt GUI
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -23,7 +23,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
 
 Package: peercoin-tx
 Source: peercoin
-Version: 0.14.7-1
+Version: 0.14.9-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 10511
@@ -31,12 +31,12 @@ Depends: libatomic1 (>= 4.8), libc6 (>= 2.34), libdb5.3++, libgcc-s1 (>= 3.5), l
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bookworm/p/peercoin/peercoin-tx_0.14.7-1_armhf.deb
-Size: 3250880
-SHA512: 6f659d1df9f46f91fbc8d511049e4ecea28a4439a5fce283208b2e88ccce51d892cf6fb8def6220772bbadd64de0080d5b8614a17129e98682cb9cba8078e67f
-SHA256: 5c49e6300ecbc7c86373066a98007c9b22736b6ecae4aecb9cdd7cbd6d90ebb1
-SHA1: b6a59bdff862e84d258282186189f1db353548d7
-MD5sum: 9444b551d89a455235c9c6b8c87c84db
+Filename: pool/main-bookworm/p/peercoin/peercoin-tx_0.14.9-1_armhf.deb
+Size: 3251496
+SHA512: c3059c6b735716faddb377583db381016191387a61cd390dfb6d3e536479f040d368ab02fdfe1b1a111c3de4fd1eb92249f3c1130939bb3367a4c5876dcbb445
+SHA256: 409725f3e3c79260d6e8a880788ec6b3912f1391e471355be16a48c91fc8ac2f
+SHA1: 53efd07acb71b6ac5dbd07f1848cf0e2c66a5a20
+MD5sum: 69e034496d34ab16dbb462dc5dbe4093
 Description: Peer-to-peer digital currency - standalone transaction tool
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -47,7 +47,7 @@ Description: Peer-to-peer digital currency - standalone transaction tool
 
 Package: peercoind
 Source: peercoin
-Version: 0.14.7-1
+Version: 0.14.9-1
 Architecture: armhf
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
 Installed-Size: 9793
@@ -55,12 +55,12 @@ Depends: libatomic1 (>= 4.8), libc6 (>= 2.34), libdb5.3++, libevent-2.1-7 (>= 2.
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bookworm/p/peercoin/peercoind_0.14.7-1_armhf.deb
-Size: 3740508
-SHA512: 496d0ef5bbb05dfa24429b095ba44680477059f4d6a23e96d35401a7058be1617df31124687ba767ddf5d2e0febb24e4b609968ad5ba6d4a52e5a18d4c778388
-SHA256: 0428f591d79b0e892bca38852b49154b3fe9af5622e9b5610c3edb03568f405f
-SHA1: 2e9bb8ff1ddd8b00fd5e3a5a61efd08ad4f54cbb
-MD5sum: a42b8608ed8c3b1f230efba316d8a92a
+Filename: pool/main-bookworm/p/peercoin/peercoind_0.14.9-1_armhf.deb
+Size: 3740536
+SHA512: db6b2f1803fa56fdb2c268e1169a6b6f255bd393e08929f27240a476f1a81278234fbf3a5baa8eb3a45ee09ab5761be4299d713d147bc3567471f657c4e65460
+SHA256: 654b079c5ec196510512deadedff5f7c3c841a561102c19ee7f31d471da1ae77
+SHA1: c094fda5e79b64894543c21f6e9a457495b4a047
+MD5sum: b4dd706c4f7e7099f082b1dda0ed05e9
 Description: peer-to-peer network based digital currency - daemon
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
