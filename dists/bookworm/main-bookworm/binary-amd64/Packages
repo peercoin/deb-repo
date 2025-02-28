@@ -1,19 +1,19 @@
 Package: peercoin-qt
 Source: peercoin
-Version: 0.14.9-1
+Version: 0.15.0-1
 Architecture: amd64
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 19258
+Installed-Size: 19262
 Depends: libc6 (>= 2.34), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.0), libminiupnpc17 (>= 1.9.20140610), libqrencode4 (>= 3.2.0), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.15.1), libsqlite3-0 (>= 3.7.15), libssl3 (>= 3.0.0), libstdc++6 (>= 12), libzmq5 (>= 4.0.1+dfsg)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bookworm/p/peercoin/peercoin-qt_0.14.9-1_amd64.deb
-Size: 8200872
-SHA512: 4228f84b7755d372c2ec18ef55120b11da3efc5b7d9345b54f6f1a49238ba2657a99eecdd5db87cd48cd0aef7f6d74a8655b906d896d86a04c8df617d0f62edb
-SHA256: 7e382e0ee61bee8fe8920faa89951fe32dc81019e1d7e87477a40090f420d0dd
-SHA1: 9d7b789817638fa04ceca1c862767ca985db1bc7
-MD5sum: 20f17212c0f812b8313ece4f84713515
+Filename: pool/main-bookworm/p/peercoin/peercoin-qt_0.15.0-1_amd64.deb
+Size: 8202624
+SHA512: e861be00f9525e8417a0cfcab4b6075308087330f2d587fd12a618855e54a08356f7ee45f153aa41d468455d5d6ac88dcb1864b21003c4abf6a4e4797cb207a3
+SHA256: 6376af268fe4f9b086e3ea6c74ca8b27ab1d6bc52e310d89f3dc35ef6a5f25f1
+SHA1: ce21434540a7dd8f7f64cccd8cacbba944b50d8e
+MD5sum: 73e415df6ee3b26261f0c8d082c6b4c3
 Description: peer-to-peer network based digital currency - Qt GUI
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -23,20 +23,20 @@ Description: peer-to-peer network based digital currency - Qt GUI
 
 Package: peercoin-tx
 Source: peercoin
-Version: 0.14.9-1
+Version: 0.15.0-1
 Architecture: amd64
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 12295
+Installed-Size: 12299
 Depends: libc6 (>= 2.34), libdb5.3++, libgcc-s1 (>= 3.0), libsqlite3-0 (>= 3.7.15), libssl3 (>= 3.0.0), libstdc++6 (>= 12)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bookworm/p/peercoin/peercoin-tx_0.14.9-1_amd64.deb
-Size: 4902120
-SHA512: 3108d15433a96b3b7083651d7a6d3daf9637636b3dc7afca0e880baed32a5201edb9509a4fde957f195ab6e48b06da0dd41c13a722e7ab38de0d2f02d7af8447
-SHA256: cde435515f88842b42a5ea572d0fc7da678421373e498523532a22f5fdffaedc
-SHA1: 35846213e22161012ff81c63b43d8a87d493bc67
-MD5sum: 85e3572321e18010d35c48c5813a5c09
+Filename: pool/main-bookworm/p/peercoin/peercoin-tx_0.15.0-1_amd64.deb
+Size: 4904048
+SHA512: c7f1c01b560d883aa49d2d212e07bf0b1f632abb1462e60e0ace5d111a0e502e67f722143db6987f7d9b1de536846029e07b3a7b79045d4f9e9c609c20c30df3
+SHA256: 48e1c0ff018da779ffecdb5ced64e7eedf0a5431aaae3eec7c40273cefc42d03
+SHA1: add493fd4827abe177e330f464d621ef2aa90be5
+MD5sum: 347c792df8a9e0dae67c513d0851aca1
 Description: Peer-to-peer digital currency - standalone transaction tool
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
@@ -47,20 +47,20 @@ Description: Peer-to-peer digital currency - standalone transaction tool
 
 Package: peercoind
 Source: peercoin
-Version: 0.14.9-1
+Version: 0.15.0-1
 Architecture: amd64
 Maintainer: Peerchemist <peerchemist@protonmail.ch>
-Installed-Size: 11612
+Installed-Size: 11616
 Depends: libc6 (>= 2.34), libdb5.3++, libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.0), libminiupnpc17 (>= 1.9.20140610), libsqlite3-0 (>= 3.7.15), libssl3 (>= 3.0.0), libstdc++6 (>= 12), libzmq5 (>= 4.0.1+dfsg)
 Homepage: https://www.peercoin.net/
 Priority: optional
 Section: utils
-Filename: pool/main-bookworm/p/peercoin/peercoind_0.14.9-1_amd64.deb
-Size: 4310052
-SHA512: 287340223ec5ac18a2e219fe6a6cfd82aa6beafdfd706d90ebcba7cc99a05f47997318d7d96233771ab4f747313bd178d6a8633fb53137d5eb37c01d81f202a7
-SHA256: 3109f54e2ad86290161821881ce598ff72c4299c7efbdd8006e34ae45f604891
-SHA1: 529ab01f440d25d7e9896516331ee4886af1d7ac
-MD5sum: 33dfc82532751d8937cf25c1ca9e0bfd
+Filename: pool/main-bookworm/p/peercoin/peercoind_0.15.0-1_amd64.deb
+Size: 4310196
+SHA512: 61a4e6eb35a032a6a2cdc6aa26b4aeca66fe6efad9c3c0e97e1b943624ee3cfc1d917e655ebeada54aecfd7e5b3faae6b3e91a5c9a30c2a2c05b8e0bc23f23de
+SHA256: 0a3b3ad1b307cf527408515ae1d369f8464bdfcd1221feffbb4d5dcf10d45771
+SHA1: 2b086866b002c121566cb245cec151998c61c832
+MD5sum: a7e4dbcc6f9e37afc3ae7f7e6a6fd5a6
 Description: peer-to-peer network based digital currency - daemon
  Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
