@@ -2,7 +2,7 @@ Origin: Peercoin
 Label: Peercoin
 Suite: stable
 Codename: bookworm
-Date: Fri, 28 Feb 2025 12:53:01 UTC
+Date: Fri, 28 Feb 2025 13:11:18 UTC
 Architectures: amd64 arm64 armhf i386
 Components: main-bookworm
 Description: Peercoin Debian packages
@@ -16,8 +16,8 @@ MD5Sum:
  154a829911879b9ddb28e8c7c38bf787 3814 main-bookworm/binary-armhf/Packages
  c9586fffe39a6475c21aa255b674f003 1407 main-bookworm/binary-armhf/Packages.gz
  45bcc98f4f5cb7f2f566668a11fc1a00 132 main-bookworm/binary-armhf/Release
- 37b3d2380d1df7df0c9fd285652c71ad 3740 main-bookworm/binary-i386/Packages
- 1509ff5253e6a86e43eb5ddf455b92a2 1402 main-bookworm/binary-i386/Packages.gz
+ 1b2a3d9c2db41c946f091b59f9a33f1e 3740 main-bookworm/binary-i386/Packages
+ 119ccc4f621d8d1401f288ce42a36eb7 1402 main-bookworm/binary-i386/Packages.gz
  66de98507852771db174f0e840685ba4 131 main-bookworm/binary-i386/Release
 SHA1:
  30379f6743146701e174e505ea83e899a09e52bf 3752 main-bookworm/binary-amd64/Packages
@@ -29,8 +29,8 @@ SHA1:
  142ac9244c15b55066a06dee95b848163f9e43a1 3814 main-bookworm/binary-armhf/Packages
  790e54fd8894572c488a7c26df0f215221f6698a 1407 main-bookworm/binary-armhf/Packages.gz
  0fa01f81a68a6f7d554a91aabbe4f11af9b2ea17 132 main-bookworm/binary-armhf/Release
- fcba6cacbb58117454be20672665869587d21090 3740 main-bookworm/binary-i386/Packages
- 8b8c6158d3d05185fd16d69bf0a75df4eff4388c 1402 main-bookworm/binary-i386/Packages.gz
+ 799db04989f43237edbe41f9342e1d8cebc63c6a 3740 main-bookworm/binary-i386/Packages
+ c24e2e641b2551e3c5edc8c2b424110b4714372d 1402 main-bookworm/binary-i386/Packages.gz
  4e34b52d8489a67504c42ddc9c25873eed57572b 131 main-bookworm/binary-i386/Release
 SHA256:
  a47812f3dbd4310c4be0df93fb921a1d4a3fdb2d19a0a3abb2dd2b088249ede2 3752 main-bookworm/binary-amd64/Packages
@@ -42,8 +42,8 @@ SHA256:
  f535bb103109d5160eac1ab3feb96be8ff1f7178ffa411ce41d11e8e3f8cd8c2 3814 main-bookworm/binary-armhf/Packages
  46816e9c580b18960ec63f781455ed0dd902a7c00d996cd501b242e88e39da3e 1407 main-bookworm/binary-armhf/Packages.gz
  a072b1e9654ce4b5ce218095c005b88c61b5c9d68cf4751bb0f34eaf2ee5047d 132 main-bookworm/binary-armhf/Release
- 703d7cac82188f34e4b9551f04aeb1260435a016650dab7273241b373ed7514f 3740 main-bookworm/binary-i386/Packages
- 42f61cd9be449a70a64fcf42559457b73a390f1e49d82e3f176e2e6f129968e9 1402 main-bookworm/binary-i386/Packages.gz
+ 861160e7a1673735e41f93267108a6a86432fb37e4f665cf2dc83b85326eabf3 3740 main-bookworm/binary-i386/Packages
+ 30314ecdec78f9dc29f39a50f46eed59a5d0130f3a869a1539f93341a6504ca7 1402 main-bookworm/binary-i386/Packages.gz
  6466db567ce2e941c6b78ac6b69456242003785e73389cdfee859085182e760e 131 main-bookworm/binary-i386/Release
 SHA512:
  e5450396c7539bc3a870c4e36d5ec657ba0f08e4983abeed709a4d5a5ee24b2085767e6734a1c5774574a489eb76ab5b054df06dc1362af1dd71902e140eb639 3752 main-bookworm/binary-amd64/Packages
@@ -55,6 +55,6 @@ SHA512:
  dc35855512b48d5ec1d3e6bb858c326eb2c750ef81c5399b16da77428af7b789e3b7b749bcf89599fff1c2f655951d71f1a25cf99ad2ddfdde66dd53ec428a63 3814 main-bookworm/binary-armhf/Packages
  0e55596f568a6379ac94c15eb3c63dbe4e6578558c62789c12c08309f303c7c8ee6508b993ac64f914ea52f2b7e4b073a2958d9cccfc861f6be23f26de7969ee 1407 main-bookworm/binary-armhf/Packages.gz
  0924982a1dea95d05d1478f149b23cf1795c0010a12dd608d775a88de6100ff630a92155180d4ff4e84f5a8e74d12d84fada9567e89f6ae35d91238a00383014 132 main-bookworm/binary-armhf/Release
- d1a24658734fa3a034b9ea3814bfd70e503a3aedcc8e6a66fd4404623c67e0c5e6aa7e86be82f2a3c8e18d9a6d432f6f797eb1aa79914bd552906c7e17f19af5 3740 main-bookworm/binary-i386/Packages
- 41985460a65eb435eafd7fe5adc5f69b492a6fa8896f2dd507a88312eccd937998d05d83dbacf5ee3e813e18767b2f2dd7518513d454d136d170842d08563ebb 1402 main-bookworm/binary-i386/Packages.gz
+ d88f3aab24a0aaad9499501291ef46cdf35d157221db428e33621b1e7501d858f63fc635bd4346c29d88e61011f442030bb1b5ff892f37d34cc3056b44d7713e 3740 main-bookworm/binary-i386/Packages
+ 6be055810994da787396f8877e13d7f7beb25a92d9ee1e4ff6ce800fcf8b7cb6683a748b48dd9b7633737ae065535547fc8bf882da7e07b4076126b2550cce3d 1402 main-bookworm/binary-i386/Packages.gz
  b1a6d28d303f40ee7f2d373a66f77ea139650a65b8bd7fbe41aed831aa8102bd154230355637f72e60ce594709450dea21fc44626fd22eb34b383b4c948d891d 131 main-bookworm/binary-i386/Release
