@@ -139,7 +139,7 @@ jobs:
       - name: Install repository tools
         run: |
           sudo apt-get update
-          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends reprepro gnupg dpkg-dev
+          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends reprepro gnupg dpkg-dev python3-markdown
       - name: Import packages and sign indexes
         env:
           APT_SIGNING_KEY: ${{ secrets.APT_SIGNING_KEY }}
