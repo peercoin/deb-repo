@@ -4,7 +4,6 @@ set -euo pipefail
 : "${APT_SIGNING_KEY:?Set APT_SIGNING_KEY to the ASCII-armored private signing key}"
 : "${APT_SIGNING_PASSPHRASE?Set APT_SIGNING_PASSPHRASE (empty for an unencrypted key)}"
 repo_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
-apt_dir="$repo_dir/.build/apt-repo"
 site_dir="$repo_dir/.build/site"
 packages_dir="$repo_dir/.build/packages"
 debian_version=$(dpkg-parsechangelog -l "$repo_dir/packaging/debian/changelog" -S Version)
@@ -28,8 +27,12 @@ printf '%s' "$APT_SIGNING_PASSPHRASE" | gpg --batch --yes \
     --detach-sign --output "$GNUPGHOME/check.sig" "$repo_dir/packaging/SHA256SUMS"
 unset APT_SIGNING_PASSPHRASE
 
-mkdir -p "$apt_dir" "$site_dir"
-cp -a "$repo_dir/conf" "$repo_dir/db" "$repo_dir/dists" "$repo_dir/pool" "$apt_dir/"
+mkdir -p "$repo_dir/.build" "$site_dir"
+apt_dir=$(mktemp -d "$repo_dir/.build/apt-repo.XXXXXX")
+# Berkeley DB files are not portable across reprepro/library versions. Rebuild
+# the database from the complete set of CI packages in a fresh directory.
+# Keep the existing pool and indexes so legacy package URLs remain available.
+cp -a "$repo_dir/conf" "$repo_dir/dists" "$repo_dir/pool" "$apt_dir/"
 shopt -s nullglob
 while read -r distro arch; do
     debs=("$packages_dir/packages-$distro-$arch"/*.deb)

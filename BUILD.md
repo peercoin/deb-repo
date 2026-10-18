@@ -72,3 +72,17 @@ git diff --stat
 
 Exporting requires access to the signing key configured in `conf/distributions`.
 Building packages does not update or publish the APT repository automatically.
+
+The CI signing stage creates a fresh reprepro database from the downloaded
+packages for every configured distro and architecture. It retains the existing
+pool and indexes, but does not copy the checked-in `db/` files, which may be
+incompatible with the runner's Berkeley DB version. Each attempt uses a new
+staging directory so a partial database cannot be reused accidentally.
+
+To publish existing build artifacts with an updated signing script, manually
+run **Build and publish APT packages** on the branch containing the fix and set
+`packages_run_id` to the original build run ID (for example `39137979293`).
+Manual runs skip source preparation and all package builds. The packages must
+match the version in that branch's Debian changelog, and the branch must be
+allowed to deploy to the `github-pages` environment. The manual trigger becomes
+available once the workflow change is on the default branch.

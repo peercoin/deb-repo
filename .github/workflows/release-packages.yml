@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - '**'
+  workflow_dispatch:
+    inputs:
+      packages_run_id:
+        description: Successful build run whose packages should be signed and published
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -19,6 +25,7 @@ defaults:
 jobs:
   source:
     name: Prepare source package
+    if: github.event_name != 'workflow_dispatch'
     runs-on: ubuntu-26.04
     timeout-minutes: 15
     outputs:
@@ -108,10 +115,11 @@ jobs:
   publish:
     name: Sign and publish APT repository
     needs: build
-    if: ${{ !startsWith(github.ref_name, 'test/') }}
+    if: ${{ always() && !cancelled() && !startsWith(github.ref_name, 'test/') && (github.event_name == 'workflow_dispatch' || needs.build.result == 'success') }}
     runs-on: ubuntu-26.04
     timeout-minutes: 30
     permissions:
+      actions: read
       contents: read
       pages: write
       id-token: write
@@ -126,6 +134,8 @@ jobs:
         with:
           pattern: packages-*
           path: .build/packages
+          run-id: ${{ inputs.packages_run_id || github.run_id }}
+          github-token: ${{ github.token }}
       - name: Install repository tools
         run: |
           sudo apt-get update
