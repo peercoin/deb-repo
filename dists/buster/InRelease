@@ -1,41 +1,41 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+Hash: SHA512
 
 Origin: Peercoin
 Label: Peercoin
 Suite: oldoldstable
 Codename: buster
-Date: Thu, 27 Feb 2025 17:58:00 UTC
+Date: Sun, 18 Oct 2026 11:17:58 UTC
 Architectures: armhf
 Components: main-buster
 Description: Peercoin Debian Buster packages
 MD5Sum:
- 2f6e894eb387f3504773decb215a12e3 3790 main-buster/binary-armhf/Packages
- 8199c6c974f6646c8dacf730fd45fcd9 1397 main-buster/binary-armhf/Packages.gz
+ c38e9144301a764b4b95c7ee623c035b 3790 main-buster/binary-armhf/Packages
+ c394197918df0984a05cdacb2e0551ef 1403 main-buster/binary-armhf/Packages.gz
  ea56ca8c34acb86d73aeff8bc3af2d14 143 main-buster/binary-armhf/Release
 SHA1:
- b967dba1309edf4a248fcc18982ae3ab655705e8 3790 main-buster/binary-armhf/Packages
- 672a394ea5303ad610cf10c296909c4f648a4b73 1397 main-buster/binary-armhf/Packages.gz
+ d49ef0eb54fb5d0c9abbb062296afd2dc34417d1 3790 main-buster/binary-armhf/Packages
+ 538156abb5d54137a7eeb807c4d36793a81e7ee6 1403 main-buster/binary-armhf/Packages.gz
  a9ce0ebf3c91484ac7f129f0395af47ab4ddae92 143 main-buster/binary-armhf/Release
 SHA256:
- fc70d13b5cc355349b474cc75c1964178d9574e0a3d55dd94cee244e57f83dc2 3790 main-buster/binary-armhf/Packages
- 55a3c6acfc4071bf0c793c4cfd7dfaf5c37a10bf749a241c6322189d643e2945 1397 main-buster/binary-armhf/Packages.gz
+ 3781f43018fe05f9ed506cbc61f688367104c169abfd7748bdd44620f9515b40 3790 main-buster/binary-armhf/Packages
+ 712fb3807fcf969f0f2607d3cc7dba4a4a9538417a2eeeb9a4876279d2b5da56 1403 main-buster/binary-armhf/Packages.gz
  fb8cfd1e888d4779aa835c09b9965523e675e2278668aa0366abe784baa57a5b 143 main-buster/binary-armhf/Release
 SHA512:
- 40476f65a3737626cfd9a402132987274ff9217b933ffd83e438927b91c202670800a19a6ed7ac430b6f43aa9fc29847566dda353676df07eef658cc51a6c149 3790 main-buster/binary-armhf/Packages
- 68a1d350aac995003b54f6c0bba614ad78574524eef4f3ea7e9ecd9f89f034daf696922030ece0770029af2eb4ceb9511f20a5ce23812cd5bad8e55b95334f29 1397 main-buster/binary-armhf/Packages.gz
+ 1cf9473d5b9a4eb67db85545db4fbee5378995a8a56c87de3c5441a588f0b32bd5c06b718f4e4e8d83a6fe7df3a9e38befdf9b742b63deb30d6e645cef95c3f9 3790 main-buster/binary-armhf/Packages
+ a56ea14d26702c975eacad29778b568845662ff736d76d1838cb53915b020fef45d7a1c253a7c4b875f792bc47e73635b5bcecc46c632e73cc680da692169f87 1403 main-buster/binary-armhf/Packages.gz
  6db16b7bc33fc8fbc28308d969fb3c3f7b806764849c5dc65000fc42ae2772534a88956f4fa9772a6917561f51e8bcb6f6926a94d8a3ac6f6214e8b92536a826 143 main-buster/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCAAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmfAp6gACgkQuCdsD4Ua
-rX5nnAwAnvPIetxDdfiWyEoHt4a0x9zP+Y8wbbn3Jk+mFF8rhmbKTc76i4vM6xbj
-lGKsB1YHRiA18WRx344jjg4/IhAegDl1SwiF3pgredOKIHhQjxBgk/2TN8T5W8rW
-u8WNuMqGumvEYmeRy0/LpIBh8xF8t9YQmcJal+oJACvfD7FKKjzQp4cqyBh6QH4X
-1zHACekCi+1WJoPQO0BqyicEH2jf2rK8zx+0Vgrkvhh/f9oZaJFbcTREI54AxLdp
-KGnKEVTo8Ordt0xVTXgXBgSFAZrTzeGxweZQdmtU89hNxzEea15qNk5k8ovn1Xpy
-RLPBDLRpfrNTxa2D4VIxLIKtmeWgMHox7odZm2ionWKLUZca33MGBmcLTGXFmoUT
-QNz7fsemWj8EcOZcZI7R4iXacZr7xIFHjt4KItUG64BOTL9phTQf/mzUm4AuuZ74
-J+eSUa4F2/kI3/PsD4cMxvJ6z09hzTl4JjYajefPSBjKYWbXICZcp0qphB9fFoda
-GxV60akv
-=wS6r
+iQGzBAEBCgAdFiEEGLd5D5UY3dW5FmgEuCdsD4UarX4FAmrUquYACgkQuCdsD4Ua
+rX6nRQv9GrqFfZ5/GpdUuugW5d+H1FqSd3Rc2TqvsS8/z6FqyCPO7h7xps8CsfzC
+qFUGjkFNgfnp5glFXn1dKrbjyR2yxgMgU8YaKuZj3L09ImxHTIGwougsIiEX/xdb
+VZ96x9RHiJ1G7utyXFkememOVyhRezX+icUrl0MaCd2cnB1FzQ2/L6UKrPg9xbBW
+KPp7aXRPVRoh9+3ZXLIEf5tzSRbYNJhApAmphSFTEzQ671aEzfuW+ONFu+lXRBko
+MaFJ9/1nD1tmA9/qyK2j7dc27QeNFbz411QT6SULAdDaRSPie2QmxDTqGBvfgFf5
+QDM11/60p6EzKsr8jFtTRSx9y9qM0G/ZFZQXUoaZKe0BfVauwYKeUghqghMHGmdP
+lvLXeQM7YpE5hIRmaeOKKBa3YsaoEaE74iCb9CHS0CnUTDeiU4Lw+q7MBIftygYy
+k//rY0WLSlhLoWtIMWpKhwQPyWLGTLQI6D565XuI0mImzweZXnoQ4hMMuUyPNGyd
+u38ciRqj
+=47sd
 -----END PGP SIGNATURE-----
