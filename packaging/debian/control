@@ -13,7 +13,7 @@ Build-Depends:
  libboost-test-dev,
  libboost-thread-dev,
  libssl-dev,
- libdb++-dev,
+ libdb5.3++-dev,
  libevent-dev,
  libleveldb-dev,
  libminiupnpc-dev,
