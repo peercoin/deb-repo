@@ -28,6 +28,15 @@ SignWith: B8276C0F851AAD7E
 Origin: Peercoin
 Label: Peercoin
 Suite: stable
+Codename: trixie
+Architectures: amd64 arm64
+Components: main-trixie
+Description: Peercoin Debian Trixie packages
+SignWith: B8276C0F851AAD7E
+
+Origin: Peercoin
+Label: Peercoin
+Suite: stable
 Codename: jammy
 Architectures: riscv64
 Components: main-jammy

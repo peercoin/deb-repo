@@ -3,7 +3,7 @@
 The repository now includes the Debian packaging previously maintained in
 [peercoin/packaging](https://github.com/peercoin/packaging), based on the
 packaging used for the 0.15.0 builds. It produces `peercoind`, `peercoin-qt` and
-`peercoin-tx` version `0.15.2-1`, retaining the existing system-library build
+`peercoin-tx` version `0.15.2-2`, retaining the existing system-library build
 options, including Berkeley DB 5.3 on Debian Bookworm.
 
 Install `curl`, `dpkg-dev` and `xz` on the host for source preparation. From
@@ -15,7 +15,7 @@ this repository's root, run this as your regular user:
 
 This downloads the [v0.15.2ppc source](https://github.com/peercoin/peercoin/releases/tag/v0.15.2ppc),
 checks it against `packaging/SHA256SUMS`, and creates the unsigned source package
-`.build/source/peercoin_0.15.2-1.dsc`. To use an existing source download, pass
+`.build/source/peercoin_0.15.2-2.dsc`. To use an existing source download, pass
 its path as the script's only argument. Generated source and binary packages
 are ignored by Git under `.build/` until deliberately imported into the APT
 repository.
@@ -29,7 +29,7 @@ sudo env OS=debian DIST=bookworm ARCH=amd64 \
   pbuilder build \
   --configfile "$PWD/packaging/pbuilderrc" \
   --buildresult "$PWD/.build/bookworm-amd64" \
-  "$PWD/.build/source/peercoin_0.15.2-1.dsc"
+  "$PWD/.build/source/peercoin_0.15.2-2.dsc"
 ```
 
 This uses the repository's configuration rather than `~/.pbuilderrc`.
@@ -38,6 +38,8 @@ separate result directory for each target:
 
 | OS | DIST | ARCH | Base archive in `/var/cache/pbuilder/` |
 | --- | --- | --- | --- |
+| debian | trixie | amd64 | `debian-trixie-amd64-base.tgz` |
+| debian | trixie | arm64 | `debian-trixie-arm64-base.tgz` |
 | debian | bookworm | amd64 | `debian-bookworm-amd64-base.tgz` |
 | debian | bookworm | arm64 | `debian-bookworm-arm64-base.tgz` |
 | debian | bookworm | i386 | `debian-bookworm-i386-base.tgz` |
@@ -58,7 +60,10 @@ After building and reviewing the packages, import them and regenerate the signed
 APT indexes as your regular user (Bookworm amd64 example):
 
 ```bash
-reprepro --export=never includedeb bookworm .build/bookworm-amd64/*.deb
+reprepro --export=never includedeb bookworm \
+  .build/bookworm-amd64/peercoind_*.deb \
+  .build/bookworm-amd64/peercoin-qt_*.deb \
+  .build/bookworm-amd64/peercoin-tx_*.deb
 reprepro export bookworm
 reprepro check bookworm
 reprepro list bookworm

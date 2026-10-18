@@ -1,0 +1,143 @@
+name: Build and publish APT packages
+
+on:
+  push:
+    tags:
+      - '**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apt-release
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  source:
+    name: Prepare source package
+    runs-on: ubuntu-26.04
+    timeout-minutes: 15
+    outputs:
+      matrix: ${{ steps.targets.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            conf
+            packaging
+            scripts
+      - name: Select build targets
+        id: targets
+        run: python3 ./scripts/ci-matrix.py >> "$GITHUB_OUTPUT"
+      - name: Install source packaging tools
+        run: |
+          sudo apt-get update
+          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends dpkg-dev xz-utils curl
+      - name: Prepare verified source
+        run: ./scripts/prepare-source.sh
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: peercoin-source
+          path: .build/source/*
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+
+  build:
+    name: ${{ matrix.dist }} / ${{ matrix.arch }}
+    needs: source
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.source.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            packaging
+            scripts
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: peercoin-source
+          path: .build/source
+      - name: Set up emulation
+        if: matrix.qemu != ''
+        uses: docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1 # v4.4.0
+        with:
+          platforms: ${{ matrix.qemu }}
+      - name: Install build environment tools
+        run: |
+          sudo apt-get update
+          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            pbuilder debootstrap ubuntu-keyring gnupg curl dpkg-dev
+      - name: Create chroot and build packages
+        env:
+          OS: ${{ matrix.os }}
+          DIST: ${{ matrix.dist }}
+          ARCH: ${{ matrix.arch }}
+        run: |
+          sudo env OS="$OS" DIST="$DIST" ARCH="$ARCH" BUILD_JOBS="$(nproc)" ./scripts/ci-build.sh
+      - name: Upload packages
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: packages-${{ matrix.dist }}-${{ matrix.arch }}
+          path: |
+            .build/${{ matrix.dist }}-${{ matrix.arch }}/peercoind_*.deb
+            .build/${{ matrix.dist }}-${{ matrix.arch }}/peercoin-qt_*.deb
+            .build/${{ matrix.dist }}-${{ matrix.arch }}/peercoin-tx_*.deb
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+      - name: Upload build logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: logs-${{ matrix.dist }}-${{ matrix.arch }}
+          path: .build/${{ matrix.dist }}-${{ matrix.arch }}/*.log
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 14
+
+  publish:
+    name: Sign and publish APT repository
+    needs: build
+    if: ${{ !startsWith(github.ref_name, 'test/') }}
+    runs-on: ubuntu-26.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: packages-*
+          path: .build/packages
+      - name: Install repository tools
+        run: |
+          sudo apt-get update
+          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends reprepro gnupg dpkg-dev
+      - name: Import packages and sign indexes
+        env:
+          APT_SIGNING_KEY: ${{ secrets.APT_SIGNING_KEY }}
+          APT_SIGNING_PASSPHRASE: ${{ secrets.APT_SIGNING_PASSPHRASE }}
+        run: ./scripts/ci-sign-repository.sh
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: .build/site
+      - name: Deploy signed APT repository
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

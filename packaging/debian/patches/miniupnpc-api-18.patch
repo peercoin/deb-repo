@@ -1,0 +1,18 @@
+Description: Support the miniUPnPc API 18 shipped by Debian Trixie
+ miniUPnPc 2.2.8 adds WAN address output arguments to UPNP_GetValidIGD.
+ Keep the API 17 call for older distributions.
+Author: Peerchemist <peerchemist@protonmail.ch>
+Forwarded: no
+Last-Update: 2026-10-18
+--- a/src/mapport.cpp
++++ b/src/mapport.cpp
+@@ -168,4 +168,9 @@
++#if MINIUPNPC_API_VERSION >= 18
++    char wanaddr[64];
++    r = UPNP_GetValidIGD(devlist, &urls, &data, lanaddr, sizeof(lanaddr), wanaddr, sizeof(wanaddr));
++#else
+     r = UPNP_GetValidIGD(devlist, &urls, &data, lanaddr, sizeof(lanaddr));
++#endif
+     if (r == 1)
+     {
+         if (fDiscover) {

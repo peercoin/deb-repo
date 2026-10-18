@@ -1,6 +1,6 @@
 # Loaded by pbuilder (Bash). Select a target with OS, DIST and ARCH.
 case "${OS:-}:${DIST:-}:${ARCH:-}" in
-    debian:bookworm:amd64|debian:bookworm:arm64|debian:bookworm:i386|debian:bullseye:amd64)
+    debian:trixie:amd64|debian:trixie:arm64|debian:bookworm:amd64|debian:bookworm:arm64|debian:bookworm:i386|debian:bullseye:amd64)
         MIRRORSITE=https://deb.debian.org/debian
         COMPONENTS="main contrib non-free"
         ;;
@@ -26,4 +26,11 @@ BUILDPLACE=/var/cache/pbuilder/build
 APTCACHE="/var/cache/pbuilder/$NAME/aptcache"
 BUILDRESULT="/var/cache/pbuilder/result/$NAME"
 PBUILDERSATISFYDEPENDSCMD=/usr/lib/pbuilder/pbuilder-satisfydepends-apt
-export DEB_BUILD_OPTIONS="parallel=8"
+export DEB_BUILD_OPTIONS="parallel=${BUILD_JOBS:-8}"
+
+# CI supplies a verified archive key when creating a fresh chroot.
+if [[ -n ${PBUILDER_KEYRING:-} ]]; then
+    DEBOOTSTRAPOPTS=(--variant=buildd --include=apt,ca-certificates --force-check-gpg --keyring "$PBUILDER_KEYRING")
+    APTKEYRINGS=("$PBUILDER_KEYRING")
+    EXTRAPACKAGES="ca-certificates"
+fi
