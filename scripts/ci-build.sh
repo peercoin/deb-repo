@@ -10,7 +10,7 @@ repo_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 source "$repo_dir/packaging/pbuilderrc"
 result_dir="$repo_dir/.build/$DIST-$ARCH"
 key_dir="$repo_dir/.build/keyrings"
-mkdir -p "$result_dir" "$key_dir/gnupg"
+mkdir -p "$result_dir" "$key_dir/gnupg" "$APTCACHE"
 chmod 700 "$key_dir/gnupg"
 export GNUPGHOME="$key_dir/gnupg"
 export PBUILDER_KEYRING="$key_dir/$OS-$DIST.gpg"
