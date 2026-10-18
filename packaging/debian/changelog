@@ -1,0 +1,149 @@
+peercoin (0.15.2-1) stable; urgency=high
+
+  * New upstream release: reject mismatched proof types during validation.
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Sun, 18 Oct 2026 12:00:00 +0000
+
+peercoin (0.15.0-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Thu, 27 Feb 2025 11:51:22 +0000
+
+peercoin (0.14.9-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Tue, 06 Aug 2024 11:51:22 +0000
+
+peercoin (0.14.7-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Wed, 03 Jul 2024 11:51:22 +0000
+
+peercoin (0.14.6-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Fri, 21 Jun 2024 11:51:22 +0000
+
+peercoin (0.14.5-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Tue, 01 Jun 2024 11:51:22 +0000
+
+peercoin (0.14.4-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Tue, 27 May 2024 11:51:22 +0000
+
+peercoin (0.14.3-2) stable; urgency=low
+
+  * Use raspbian deboostrap for amrhf.
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Fri, 17 May 2024 11:51:22 +0000
+
+peercoin (0.14.3-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Tue, 14 May 2024 11:51:22 +0000
+
+peercoin (0.14.0-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Mon, 22 Apr 2024 11:51:22 +0000
+
+peercoin (0.12.7-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Wed, 24 Oct 2023 11:51:22 +0000
+
+peercoin (0.12.6-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Wed, 06 Sep 2023 11:51:22 +0000
+
+peercoin (0.12.3-2) stable; urgency=low
+
+  * fix peercoin.desktop integration files
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Sat, 15 Apr 2023 11:51:22 +0000
+
+peercoin (0.12.3-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Thu, 10 Apr 2023 11:51:22 +0000
+
+peercoin (0.12.1-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Sat, 14 Feb 2023 11:51:22 +0000
+
+peercoin (0.12.0-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Sat, 13 Feb 2023 11:51:22 +0000
+
+peercoin (0.11.7-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Fri, 27 May 2022 11:51:22 +0000
+
+peercoin (0.11.4-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Sat, 15 Jan 2021 16:05:22 +0000
+
+peercoin (0.11.1-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Wed, 03 Nov 2021 13:04:22 +0000
+
+peercoin (0.11.0-1) stable; urgency=low
+
+  [ upstream ]
+  * new release
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Wed, 20 Oct 2021 13:32:22 +0000
+
+peercoin (0.10.4-1) stable; urgency=low
+
+  [ upstream ]
+  * new release(s)
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Tue, 10 Aug 2021 12:02:11 +0000
+
+peercoin (0.9.0-3) stable; urgency=low
+
+  * Another set of small fixes.
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Sat, 10 Oct 2020 15:32:20 +0000

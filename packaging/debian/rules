@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+CONFIGURE_OPTS = --with-incompatible-bdb --disable-bench --disable-tests
+
+%:
+	dh $@
+
+execute_before_dh_auto_clean:
+	rm -rf src/obj
+	-rmdir --ignore-fail-on-non-empty build
+	rm -f src/peercoind
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CONFIGURE_OPTS)
+
+override_dh_auto_build:
+	dh_auto_build
+
+override_dh_auto_test:
+	# Disable running tests
+	echo "Skipping dh_auto_test"
+
+override_dh_auto_install:
+	dh_auto_install

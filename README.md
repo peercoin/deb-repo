@@ -57,3 +57,7 @@ echo "deb https://peercoin.github.io/deb-repo/ $(lsb_release -cs) main-$(lsb_rel
 ## How to set up Debian repo
 
 https://blog.packagecloud.io/eng/2017/03/23/create-debian-repository-reprepro/
+
+## Building packages
+
+See [BUILD.md](BUILD.md) for source preparation, package builds and repository updates.

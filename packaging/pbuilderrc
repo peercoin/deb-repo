@@ -1,0 +1,29 @@
+# Loaded by pbuilder (Bash). Select a target with OS, DIST and ARCH.
+case "${OS:-}:${DIST:-}:${ARCH:-}" in
+    debian:bookworm:amd64|debian:bookworm:arm64|debian:bookworm:i386|debian:bullseye:amd64)
+        MIRRORSITE=https://deb.debian.org/debian
+        COMPONENTS="main contrib non-free"
+        ;;
+    raspbian:bookworm:armhf|raspbian:bullseye:armhf|raspbian:buster:armhf)
+        MIRRORSITE=https://archive.raspbian.org/raspbian
+        COMPONENTS="main contrib non-free"
+        ;;
+    ubuntu:jammy:riscv64)
+        MIRRORSITE=https://ports.ubuntu.com/ubuntu-ports
+        COMPONENTS="main restricted universe multiverse"
+        ;;
+    *)
+        echo "Unsupported build target: OS=${OS:-} DIST=${DIST:-} ARCH=${ARCH:-}" >&2
+        exit 1
+        ;;
+esac
+
+NAME="$OS-$DIST-$ARCH"
+BASETGZ="/var/cache/pbuilder/$NAME-base.tgz"
+DISTRIBUTION="$DIST"
+ARCHITECTURE="$ARCH"
+BUILDPLACE=/var/cache/pbuilder/build
+APTCACHE="/var/cache/pbuilder/$NAME/aptcache"
+BUILDRESULT="/var/cache/pbuilder/result/$NAME"
+PBUILDERSATISFYDEPENDSCMD=/usr/lib/pbuilder/pbuilder-satisfydepends-apt
+export DEB_BUILD_OPTIONS="parallel=8"

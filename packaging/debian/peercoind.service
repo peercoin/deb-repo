@@ -1,0 +1,20 @@
+[Unit]
+Description=Peercoin Daemon
+After=network.target
+
+[Service]
+User=peercoin
+Group=peercoin
+Type=forking
+ExecStart=/usr/bin/peercoind -daemon
+ExecStop=/usr/bin/peercoin-cli stop
+Restart=on-abort
+# Other options you might want to use:
+# PIDFile=/var/run/peercoind/peercoind.pid
+# TimeoutSec=30
+# PrivateTmp=true
+# ProtectSystem=full
+# ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
