@@ -1,3 +1,9 @@
+peercoin (0.15.2-3) stable; urgency=medium
+
+  * Build Buster armhf packages from the legacy Raspbian archive.
+
+ -- Peerchemist <peerchemist@protonmail.ch>  Sun, 18 Oct 2026 12:30:00 +0000
+
 peercoin (0.15.2-2) stable; urgency=medium
 
   * Support miniUPnPc API 18 for Debian Trixie builds.

@@ -4,7 +4,11 @@ case "${OS:-}:${DIST:-}:${ARCH:-}" in
         MIRRORSITE=https://deb.debian.org/debian
         COMPONENTS="main contrib non-free"
         ;;
-    raspbian:bookworm:armhf|raspbian:bullseye:armhf|raspbian:buster:armhf)
+    raspbian:buster:armhf)
+        MIRRORSITE=https://legacy.raspbian.org/raspbian
+        COMPONENTS="main contrib non-free"
+        ;;
+    raspbian:bookworm:armhf|raspbian:bullseye:armhf)
         MIRRORSITE=https://archive.raspbian.org/raspbian
         COMPONENTS="main contrib non-free"
         ;;
