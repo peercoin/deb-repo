@@ -28,6 +28,12 @@ DISTRIBUTION="$DIST"
 ARCHITECTURE="$ARCH"
 BUILDPLACE=/var/cache/pbuilder/build
 APTCACHE="/var/cache/pbuilder/$NAME/aptcache"
+# CI keeps these files in the workspace so Actions can restore and save them.
+if [[ -n ${PBUILDER_CACHE_DIR:-} ]]; then
+    BASETGZ="$PBUILDER_CACHE_DIR/base.tgz"
+    APTCACHE="$PBUILDER_CACHE_DIR/aptcache"
+    CCACHEDIR="$PBUILDER_CACHE_DIR/ccache"
+fi
 BUILDRESULT="/var/cache/pbuilder/result/$NAME"
 PBUILDERSATISFYDEPENDSCMD=/usr/lib/pbuilder/pbuilder-satisfydepends-apt
 export DEB_BUILD_OPTIONS="parallel=${BUILD_JOBS:-8}"

@@ -11,6 +11,10 @@ source "$repo_dir/packaging/pbuilderrc"
 result_dir="$repo_dir/.build/$DIST-$ARCH"
 key_dir="$repo_dir/.build/keyrings"
 mkdir -p "$result_dir" "$key_dir/gnupg" "$APTCACHE"
+if [[ -n ${CCACHEDIR:-} ]]; then
+    mkdir -p "$CCACHEDIR"
+    printf 'max_size = 512M\ncompiler_check = content\n' > "$CCACHEDIR/ccache.conf"
+fi
 chmod 700 "$key_dir/gnupg"
 export GNUPGHOME="$key_dir/gnupg"
 export PBUILDER_KEYRING="$key_dir/$OS-$DIST.gpg"
@@ -44,8 +48,14 @@ if [[ "$OS" != ubuntu ]]; then
     gpg --batch --yes --dearmor --output "$PBUILDER_KEYRING" "$key_dir/archive.asc"
 fi
 
-pbuilder create --configfile "$repo_dir/packaging/pbuilderrc" \
-    --logfile "$result_dir/create.log"
+if [[ -s "$BASETGZ" ]]; then
+    # Refresh package indexes and installed tools even when restoring a cache.
+    pbuilder update --configfile "$repo_dir/packaging/pbuilderrc" \
+        --override-config --autocleanaptcache --logfile "$result_dir/update.log"
+else
+    pbuilder create --configfile "$repo_dir/packaging/pbuilderrc" \
+        --logfile "$result_dir/create.log"
+fi
 debian_version=$(dpkg-parsechangelog -l "$repo_dir/packaging/debian/changelog" -S Version)
 pbuilder build --configfile "$repo_dir/packaging/pbuilderrc" \
     --buildresult "$result_dir" --logfile "$result_dir/build.log" \

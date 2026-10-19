@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
     inputs:
       packages_run_id:
-        description: Successful build run whose packages should be signed and published
-        required: true
+        description: Build run to publish; leave empty to build packages and warm caches without publishing
+        required: false
         type: string
 
 permissions:
@@ -25,7 +25,7 @@ defaults:
 jobs:
   source:
     name: Prepare source package
-    if: github.event_name != 'workflow_dispatch'
+    if: github.event_name != 'workflow_dispatch' || inputs.packages_run_id == ''
     runs-on: ubuntu-26.04
     timeout-minutes: 15
     outputs:
@@ -63,6 +63,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.source.outputs.matrix) }}
+    env:
+      OS: ${{ matrix.os }}
+      DIST: ${{ matrix.dist }}
+      ARCH: ${{ matrix.arch }}
+      PBUILDER_CACHE_DIR: ${{ github.workspace }}/.build/cache/${{ matrix.os }}-${{ matrix.dist }}-${{ matrix.arch }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -79,18 +84,28 @@ jobs:
         uses: docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1 # v4.4.0
         with:
           platforms: ${{ matrix.qemu }}
+      - name: Restore build caches
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ env.PBUILDER_CACHE_DIR }}
+          key: pbuilder-v1-${{ matrix.runner }}-${{ matrix.os }}-${{ matrix.dist }}-${{ matrix.arch }}-${{ hashFiles('packaging/pbuilderrc', 'scripts/ci-build.sh') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            pbuilder-v1-${{ matrix.runner }}-${{ matrix.os }}-${{ matrix.dist }}-${{ matrix.arch }}-${{ hashFiles('packaging/pbuilderrc', 'scripts/ci-build.sh') }}-
       - name: Install build environment tools
         run: |
           sudo apt-get update
           sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
             pbuilder debootstrap ubuntu-keyring gnupg curl dpkg-dev
-      - name: Create chroot and build packages
-        env:
-          OS: ${{ matrix.os }}
-          DIST: ${{ matrix.dist }}
-          ARCH: ${{ matrix.arch }}
+      - name: Create or update chroot and build packages
         run: |
-          sudo env OS="$OS" DIST="$DIST" ARCH="$ARCH" BUILD_JOBS="$(nproc)" ./scripts/ci-build.sh
+          sudo env OS="$OS" DIST="$DIST" ARCH="$ARCH" BUILD_JOBS="$(nproc)" \
+            PBUILDER_CACHE_DIR="$PBUILDER_CACHE_DIR" ./scripts/ci-build.sh
+      - name: Make build caches accessible to the runner
+        if: always()
+        run: |
+          if [[ -d "$PBUILDER_CACHE_DIR" ]]; then
+            sudo chown -R "$(id -u):$(id -g)" "$PBUILDER_CACHE_DIR"
+          fi
       - name: Upload packages
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
@@ -115,7 +130,7 @@ jobs:
   publish:
     name: Sign and publish APT repository
     needs: build
-    if: ${{ always() && !cancelled() && !startsWith(github.ref_name, 'test/') && (github.event_name == 'workflow_dispatch' || needs.build.result == 'success') }}
+    if: ${{ always() && !cancelled() && !startsWith(github.ref_name, 'test/') && ((github.event_name == 'workflow_dispatch' && inputs.packages_run_id != '') || (github.event_name == 'push' && needs.build.result == 'success')) }}
     runs-on: ubuntu-26.04
     timeout-minutes: 30
     permissions:

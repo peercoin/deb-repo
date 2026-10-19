@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Select all APT targets, or one target for test/<distro>/<arch>/<label> tags."""
+"""Select APT targets for releases, manual builds, or test tags."""
 
 import json
 import os
@@ -28,7 +28,7 @@ if tag.startswith("test/"):
     targets = [target for target in targets if (target["dist"], target["arch"]) == tuple(parts[1:3])]
     if not targets:
         raise SystemExit(f"Unsupported test target: {parts[1]}/{parts[2]}")
-else:
+elif os.environ.get("GITHUB_EVENT_NAME") != "workflow_dispatch":
     changelog = config.parents[1] / "packaging/debian/changelog"
     version = changelog.read_text().splitlines()[0].split("(", 1)[1].split(")", 1)[0]
     if tag != f"v{version}":

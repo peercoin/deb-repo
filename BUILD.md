@@ -78,6 +78,23 @@ git diff --stat
 Exporting requires access to the signing key configured in `conf/distributions`.
 Building packages does not update or publish the APT repository automatically.
 
+CI caches each target's base chroot, downloaded APT packages and compiler output
+under `.build/cache/<os>-<distro>-<arch>/`. Restored chroots are updated before
+building. Compiler caching uses pbuilder's built-in `ccache` support, with a
+512 MB limit per target and compiler content checks. Cache keys separate runner
+platforms and targets, and changes to `packaging/pbuilderrc` or
+`scripts/ci-build.sh` invalidate them. Successful runs save a new cache so later
+builds can reuse newly downloaded packages and compiler output. Local builds
+keep using `/var/cache/pbuilder` unless `PBUILDER_CACHE_DIR` is set to an absolute
+cache directory.
+
+GitHub isolates caches between different tags, but release tags can restore
+caches from the default branch. To populate those shared caches, manually run
+**Build and publish APT packages** on the default branch with `packages_run_id`
+left empty. This builds all targets and uploads their packages and logs without
+publishing the repository. Caches created by a tag build can also speed up
+reruns of that same tag. Evicted or missing caches simply cause a fresh build.
+
 The CI signing stage creates a fresh reprepro database from the downloaded
 packages for every configured distro and architecture. It retains the existing
 pool and indexes, but does not copy the checked-in `db/` files, which may be
@@ -87,7 +104,8 @@ staging directory so a partial database cannot be reused accidentally.
 To publish existing build artifacts with an updated signing script, manually
 run **Build and publish APT packages** on the branch containing the fix and set
 `packages_run_id` to the original build run ID (for example `39137979293`).
-Manual runs skip source preparation and all package builds. The packages must
-match the version in that branch's Debian changelog, and the branch must be
-allowed to deploy to the `github-pages` environment. The manual trigger becomes
+Manual runs with a nonempty `packages_run_id` skip source preparation and all
+package builds. The packages must match the version in that branch's Debian
+changelog, and the branch must be allowed to deploy to the `github-pages`
+environment. The manual trigger becomes
 available once the workflow change is on the default branch.
