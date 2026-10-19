@@ -88,6 +88,10 @@ builds can reuse newly downloaded packages and compiler output. Local builds
 keep using `/var/cache/pbuilder` unless `PBUILDER_CACHE_DIR` is set to an absolute
 cache directory.
 
+Compiler caching is disabled for Raspbian Bullseye `armhf`: its `ccache` 4.2
+package crashes with SIGBUS under QEMU. That target still caches its base chroot
+and APT downloads.
+
 The chroot's APT configuration in `packaging/apt/` retries failed downloads up
 to five times, including build-dependency downloads. Changes to this configuration
 also invalidate the chroot cache. Persistent download failures still fail the

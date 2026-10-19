@@ -40,6 +40,10 @@ if [[ -n ${PBUILDER_CACHE_DIR:-} ]]; then
     APTCACHE="$PBUILDER_CACHE_DIR/aptcache"
     CCACHEDIR="$PBUILDER_CACHE_DIR/ccache"
 fi
+if [[ "$OS:$DIST:$ARCH" == raspbian:bullseye:armhf ]]; then
+    # Raspbian's ccache 4.2 crashes with SIGBUS while caching under QEMU.
+    CCACHEDIR=
+fi
 BUILDRESULT="/var/cache/pbuilder/result/$NAME"
 PBUILDERSATISFYDEPENDSCMD=/usr/lib/pbuilder/pbuilder-satisfydepends-apt
 # Configure APT inside the chroot, including the separate dependency resolver.
