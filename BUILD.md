@@ -88,6 +88,11 @@ builds can reuse newly downloaded packages and compiler output. Local builds
 keep using `/var/cache/pbuilder` unless `PBUILDER_CACHE_DIR` is set to an absolute
 cache directory.
 
+The chroot's APT configuration in `packaging/apt/` retries failed downloads up
+to five times, including build-dependency downloads. Changes to this configuration
+also invalidate the chroot cache. Persistent download failures still fail the
+build.
+
 GitHub isolates caches between different tags, but release tags can restore
 caches from the default branch. To populate those shared caches, manually run
 **Build and publish APT packages** on the default branch with `packages_run_id`

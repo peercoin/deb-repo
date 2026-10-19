@@ -36,6 +36,8 @@ if [[ -n ${PBUILDER_CACHE_DIR:-} ]]; then
 fi
 BUILDRESULT="/var/cache/pbuilder/result/$NAME"
 PBUILDERSATISFYDEPENDSCMD=/usr/lib/pbuilder/pbuilder-satisfydepends-apt
+# Configure APT inside the chroot, including the separate dependency resolver.
+APTCONFDIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/apt" && pwd)"
 export DEB_BUILD_OPTIONS="parallel=${BUILD_JOBS:-8}"
 
 # CI supplies a verified archive key when creating a fresh chroot.

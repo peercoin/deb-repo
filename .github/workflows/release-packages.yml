@@ -88,9 +88,9 @@ jobs:
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ${{ env.PBUILDER_CACHE_DIR }}
-          key: pbuilder-v1-${{ matrix.runner }}-${{ matrix.os }}-${{ matrix.dist }}-${{ matrix.arch }}-${{ hashFiles('packaging/pbuilderrc', 'scripts/ci-build.sh') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: pbuilder-v1-${{ matrix.runner }}-${{ matrix.os }}-${{ matrix.dist }}-${{ matrix.arch }}-${{ hashFiles('packaging/pbuilderrc', 'packaging/apt/**', 'scripts/ci-build.sh') }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            pbuilder-v1-${{ matrix.runner }}-${{ matrix.os }}-${{ matrix.dist }}-${{ matrix.arch }}-${{ hashFiles('packaging/pbuilderrc', 'scripts/ci-build.sh') }}-
+            pbuilder-v1-${{ matrix.runner }}-${{ matrix.os }}-${{ matrix.dist }}-${{ matrix.arch }}-${{ hashFiles('packaging/pbuilderrc', 'packaging/apt/**', 'scripts/ci-build.sh') }}-
       - name: Install build environment tools
         run: |
           sudo apt-get update
