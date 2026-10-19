@@ -93,6 +93,11 @@ to five times, including build-dependency downloads. Changes to this configurati
 also invalidate the chroot cache. Persistent download failures still fail the
 build.
 
+Raspbian Trixie uses `http://archive.raspbian.org/raspbian` because APT 3.0.3
+can fail with an OpenSSL EOF error when the server closes an HTTPS connection,
+even with retries and pipelining disabled. APT still verifies the archive's
+signed metadata and package hashes.
+
 GitHub isolates caches between different tags, but release tags can restore
 caches from the default branch. To populate those shared caches, manually run
 **Build and publish APT packages** on the default branch with `packages_run_id`

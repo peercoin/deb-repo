@@ -8,7 +8,13 @@ case "${OS:-}:${DIST:-}:${ARCH:-}" in
         MIRRORSITE=https://legacy.raspbian.org/raspbian
         COMPONENTS="main contrib non-free"
         ;;
-    raspbian:trixie:armhf|raspbian:bookworm:armhf|raspbian:bullseye:armhf)
+    raspbian:trixie:armhf)
+        # APT 3.0.3/OpenSSL fails when this server closes HTTPS connections.
+        # HTTP retains APT's signed metadata and package hash verification.
+        MIRRORSITE=http://archive.raspbian.org/raspbian
+        COMPONENTS="main contrib non-free"
+        ;;
+    raspbian:bookworm:armhf|raspbian:bullseye:armhf)
         MIRRORSITE=https://archive.raspbian.org/raspbian
         COMPONENTS="main contrib non-free"
         ;;
