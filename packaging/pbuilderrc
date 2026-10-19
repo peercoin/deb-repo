@@ -1,6 +1,6 @@
 # Loaded by pbuilder (Bash). Select a target with OS, DIST and ARCH.
 case "${OS:-}:${DIST:-}:${ARCH:-}" in
-    debian:trixie:amd64|debian:trixie:arm64|debian:bookworm:amd64|debian:bookworm:arm64|debian:bookworm:i386|debian:bullseye:amd64)
+    debian:trixie:amd64|debian:trixie:arm64|debian:trixie:riscv64|debian:bookworm:amd64|debian:bookworm:arm64|debian:bookworm:i386|debian:bullseye:amd64)
         MIRRORSITE=https://deb.debian.org/debian
         COMPONENTS="main contrib non-free"
         ;;
@@ -8,7 +8,7 @@ case "${OS:-}:${DIST:-}:${ARCH:-}" in
         MIRRORSITE=https://legacy.raspbian.org/raspbian
         COMPONENTS="main contrib non-free"
         ;;
-    raspbian:bookworm:armhf|raspbian:bullseye:armhf)
+    raspbian:trixie:armhf|raspbian:bookworm:armhf|raspbian:bullseye:armhf)
         MIRRORSITE=https://archive.raspbian.org/raspbian
         COMPONENTS="main contrib non-free"
         ;;

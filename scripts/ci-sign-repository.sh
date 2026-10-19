@@ -67,7 +67,7 @@ gpg --batch --export "$signing_key" > "$site_dir/peercoin.apt.key"
         '<title>Peercoin APT repository</title>' \
         '<style>body{max-width:56rem;margin:3rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#24292f}a{color:#0969da}pre{padding:1rem;background:#f6f8fa;overflow:auto}code{font-family:monospace}h1,h2{line-height:1.25}</style>' \
         '</head><body><main>'
-    /usr/bin/python3 -m markdown -x fenced_code "$repo_dir/README.md" |
+    /usr/bin/python3 -m markdown -x fenced_code -x tables "$repo_dir/README.md" |
         sed 's|href="BUILD.md"|href="https://github.com/peercoin/deb-repo/blob/master/BUILD.md"|g'
     printf '%s\n' '</main></body></html>'
 } > "$site_dir/index.html"

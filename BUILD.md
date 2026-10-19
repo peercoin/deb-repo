@@ -40,6 +40,8 @@ separate result directory for each target:
 | --- | --- | --- | --- |
 | debian | trixie | amd64 | `debian-trixie-amd64-base.tgz` |
 | debian | trixie | arm64 | `debian-trixie-arm64-base.tgz` |
+| raspbian | trixie | armhf | `raspbian-trixie-armhf-base.tgz` |
+| debian | trixie | riscv64 | `debian-trixie-riscv64-base.tgz` |
 | debian | bookworm | amd64 | `debian-bookworm-amd64-base.tgz` |
 | debian | bookworm | arm64 | `debian-bookworm-arm64-base.tgz` |
 | debian | bookworm | i386 | `debian-bookworm-i386-base.tgz` |
@@ -48,6 +50,9 @@ separate result directory for each target:
 | raspbian | bullseye | armhf | `raspbian-bullseye-armhf-base.tgz` |
 | raspbian | buster | armhf | `raspbian-buster-armhf-base.tgz` |
 | ubuntu | jammy | riscv64 | `ubuntu-jammy-riscv64-base.tgz` |
+
+The `armhf` targets use Raspbian to retain compatibility with 32-bit Raspberry
+Pi OS.
 
 ARM and RISC-V builds require QEMU user emulation with the corresponding
 binfmt handlers registered on the host. Existing base environments may need

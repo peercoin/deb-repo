@@ -29,7 +29,7 @@ Origin: Peercoin
 Label: Peercoin
 Suite: stable
 Codename: trixie
-Architectures: amd64 arm64
+Architectures: amd64 arm64 armhf riscv64
 Components: main-trixie
 Description: Peercoin Debian Trixie packages
 SignWith: B8276C0F851AAD7E
